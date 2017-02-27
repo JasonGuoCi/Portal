@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="zh-CN">
+  <texts>
+    <!--语言切换-->
+    <text name="English" value="英文" />
+    <text name="Chinese" value="中文" />
+
+  </texts>
+
+</localizationDictionary>

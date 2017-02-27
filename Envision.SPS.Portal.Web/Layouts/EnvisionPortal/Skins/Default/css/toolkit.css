@@ -1,0 +1,39 @@
+/* CSS Document */
+
+div,ul,li,h1,h2,h3,h4,p,span,input,dl,dt,dd,table,form{ margin:0; padding:0; list-style:none; font-size:14px; font-family:"Microsoft Yahei","Î¢ÈíÑÅºÚ", Arial, Helvetica, sans-serif;}
+
+a:link,a:visited,a:hover,a:active{text-decoration:none;}
+
+.clear{ clear:both; margin:0; padding:0; list-style:none; height:0px; line-height:0px;}
+
+body{ margin:0 auto; background:#fff}
+
+
+.top{ margin:0 auto; background:#3476b2; min-width:1200px;}
+.top .box{ height:60px; margin:0 auto; width:1200px;}
+.top .box h4{ background:url(../img/logo_toolkit.png) 0px center no-repeat; float:left; height:60px; width:400px;}
+.top .box span{ float:right; height:60px; padding-left:50px; background:url(../img/i_1.png) left center no-repeat; padding-right:10px; color:#fff; font-size:14px; line-height:60px;}
+.top .box .h_btn{ width:60px; height:60px; float:right; border-left:1px #5c90c0 solid; background:url(../img/i_4.png) center center no-repeat}
+.top .box .h_btn:hover{ background:url(../img/i_4_1.png) center center no-repeat}
+
+.contant{ width:1198px; margin:0 auto; padding:10px; overflow:hidden}
+.contant .t_type{ line-height:40px; padding-top:10px; font-weight:normal; width:1050px; margin:0 auto; font-size:20px; color:#333;}
+.contant .app_box{ border:0px #eee solid; border-collapse:collapse; margin:20px;}
+.contant .app_box td{ width:150px; height:150px; border:0px #eee solid; border-collapse:collapse; background:#fff;}
+.contant .app_box td .itm{ background:#fff; display:block; width:110px; padding:20px; height:110px; }
+.contant .app_box td .itm:hover{ background:#00a2e4;}
+.contant .app_box td .itm i{ display:block; margin:0 auto; width:100px; height:100px; }
+.contant .app_box td .itm i img{ border:0px; width:100px; height:100px}
+.contant .app_box td .itm p{ line-height:30px; text-align:center; color:#666; font-size:14px; }
+.contant .app_box td .itm:hover p{ color:#fff;}
+
+.b_nav_box{ border-bottom:1px #ddd solid;}
+.b_nav_box div{ width:1160px; height:30px; margin:0 auto; line-height:30px; }
+.b_nav_box div a{ color:#666; font-size:12px;}
+.b_nav_box div a:hover{ text-decoration:underline}
+.b_nav_box div em{ font-style:normal; color:#777; font-size:12px; margin:0px 10px;}
+.b_nav_box div .hover{ font-weight:bold; color:#555;}
+
+
+
+

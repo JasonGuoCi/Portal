@@ -1,0 +1,203 @@
+/* CSS Document */
+div,ul,li,h1,h2,h3,p,input,dl,dt,dd,table,form{ margin:0; font-size:14px; padding:0; list-style:none; font-family:"Microsoft Yahei","微软雅黑", Arial, Helvetica, sans-serif;}
+
+a:link,a:visited,a:hover,a:active{text-decoration:none;}
+
+.clear{ clear:both; margin:0; padding:0; list-style:none; height:0px; line-height:0px;}
+
+
+.contant .right{ padding-left:1px;}
+.contant .right .file_patch{ height:50px; border-bottom:1px #eee solid; padding:0px 20px; line-height:50px; color:#999; font-size:12px;}
+.contant .right .file_patch a{ color:#999;}
+.contant .right .file_patch span{ margin:0px 5px;}
+
+.contant .right .itmbox{ padding:40px; margin-top:20px;}
+.contant .right .itmbox .t_search{ height:40px; overflow:hidden; padding:10px 10px 30px 10px;}
+.contant .right .itmbox .t_search .type{ float:left; line-height:40px; color:#666; font-size:14px; color:#666; padding-right:5px;}
+.contant .right .itmbox .t_search .add_dp{ float:right; line-height:40px; color:#39c; text-decoration:underline; padding-left:20px; background:url(../images/i_1.png) left center no-repeat;}
+.contant .right .itmbox .t_search .add{ float:right; line-height:40px; color:#39c; text-decoration:underline; padding-left:20px; background:url(../images/i_3.png) left center no-repeat;}
+.contant .right .itmbox .t_search .s_btn{ float:left; background:#3094d0; padding:0px 25px; line-height:40px;line-height:40px\0; text-align:center; font-size:14px; color:#fff;border:0px;}
+.contant .right .itmbox .t_search .s_btn:hover{ background:#2b85bb}
+.contant .right .itmbox .t_search .s_iput{ float:left; height:38px; border:1px #ddd solid; width:300px; padding:0px 5px; line-height:38px; font-size:14px; color:#666;}
+
+.contant .right .itmbox .tbox{ width:100%; border-collapse:collapse;}
+.contant .right .itmbox .tbox td{ border:1px #ddd solid; border-collapse:collapse; text-align:center; line-height:22px; padding:10px 5px; color:#666; font-size:14px;}
+.contant .right .itmbox .tbox .type{ background:#eee; color:#333; font-weight:bold; line-height:25px; }
+.contant .right .itmbox .tbox .t_left{ text-align:left;}
+.contant .right .itmbox .tbox .w_1{ width:150px;}
+.contant .right .itmbox .tbox .w_2{ width:250px;}
+.contant .right .itmbox .tbox .edit{ display:block; padding-left:20px; background:url(../images/i_2.png) left center no-repeat; line-height:22px; width:40px; color:#39c; text-decoration:underline; margin:0 auto;}
+.contant .right .itmbox .tbox .imp{ background:#FF9}
+.contant .right .itmbox .tbox .nor_link{ color:#39c; text-decoration:underline; margin:0px 10px;}
+
+.contant .right .itmbox .tbox .page_part{ background:#f7f7f7;}
+.contant .right .itmbox .tbox .page_part ul{ overflow:hidden}
+.contant .right .itmbox .tbox .page_part ul li{ float:left; line-height:24px; font-size:12px; color:#666; padding:0px 8px;}
+.contant .right .itmbox .tbox .page_part ul li img{ border:0px; cursor:pointer }
+.contant .right .itmbox .tbox .page_part ul li .select{ line-height:24px; height:24px; color:#666; font-size:12px; font-family:Arial;}
+.contant .right .itmbox .tbox .page_part ul .i_p{ padding:5px 8px; line-height:14px;}
+.contant .right .itmbox .tbox .page_part ul .i_r{ padding:3px 8px; line-height:18px;}
+.contant .right .itmbox .tbox .page_part ul .i_input_1{ padding:0px 5px;}
+.contant .right .itmbox .tbox .page_part ul .i_input_1 .input{ width:40px; line-height:22px; border:1px #ddd solid; text-align:center; color:#666; font-size:12px; font-family:Arial;}
+
+
+.contant .right .itmbox .change_skin{ overflow:hidden; }
+.contant .right .itmbox .change_skin li{ float:left; padding:0px 20px 40px 20px; width:300px; border:0px;}
+.contant .right .itmbox .change_skin li img{ width:300px; height:225px;}
+.contant .right .itmbox .change_skin li p{ padding-top:20px; text-align:center; font-size:14px; line-height:30px; color:#333;}
+.contant .right .itmbox .change_skin li em{ display:block; text-align:center; padding:5px 0px;}
+
+
+
+.contant .right .itmbox .nor_itm{ overflow:hidden; padding-bottom:10px;}
+.contant .right .itmbox .nor_itm dt{ float:left; width:120px; line-height:20px; padding:5px; color:#333;}
+.contant .right .itmbox .nor_itm dd{ margin-left:120px; padding:5px; line-height:20px; overflow:hidden}
+.contant .right .itmbox .nor_itm dd label{ float:left; padding:0px 20px 0px 5px; line-height:20px; color:#666;}
+.contant .right .itmbox .nor_itm dd .radiobtn{ float:left; width:14px; height:14px; margin-top:3px;}
+
+.contant .right .itmbox .nor_btnarea{ padding-top:30px; overflow:hidden}
+.contant .right .itmbox .nor_btnarea .btn1{ float:left; padding:0px 40px; border:0px; margin-right:20px; text-align:center; line-height:40px; color:#fff; font-size:14px; background:#3094d0;}
+.contant .right .itmbox .nor_btnarea .btn1:hover{ background:#2b85bb}
+
+.contant .right .itmbox .cbox{ overflow:hidden}
+.contant .right .itmbox .cbox .c_li{ float:left;}
+.contant .right .itmbox .cbox .c_t1{ width:400px; border:1px #ddd solid; padding:10px; min-height:200px}
+.contant .right .itmbox .cbox .c_t1 .p_div{ overflow:hidden; padding:0px 10px;}
+.contant .right .itmbox .cbox .c_t1 .p_div:hover{ background:#f5f5f5; }
+.contant .right .itmbox .cbox .c_t1 .p_div label{ float:left; line-height:30px; color:#666;}
+.contant .right .itmbox .cbox .c_t1 .p_div .checkbox{ float:left; width:12px; height:12px; margin-right:10px; margin-top:9px;}
+.contant .right .itmbox .cbox .c_t2{ padding:0px 20px;}
+.contant .right .itmbox .cbox .c_t2 .selectbox{ padding:5px; border:1px #ddd solid; background:#f5f5f5;}
+.contant .right .itmbox .cbox .c_t2 .selectbox .select{ line-height:30px; border: medium none; border:none; width:140px; font-size:14px; color:#666; background:#f5f5f5;}
+.contant .right .itmbox .cbox .c_t2 .btn{ margin-top:20px; cursor:pointer; display:block; height:40px; text-align:center; line-height:40px; color:#fff; font-size:14px; background:#3094d0;}
+.contant .right .itmbox .cbox .c_t2 .btn:hover{ background:#2b85bb}
+ 
+.contant .right .itmbox .pbox{ border:1px #ddd solid; padding:20px;}
+.contant .right .itmbox .pbox .p_itm dd{ padding-left:20px;}
+.contant .right .itmbox .pbox .p_itm dt{ overflow:hidden}
+.contant .right .itmbox .pbox .p_itm dt .itm{ float:left; line-height:36px; padding:0px 10px 0px 32px;  cursor:pointer; color:#666;}
+.contant .right .itmbox .pbox .p_itm dt .itm:hover{ background-color:#eee;}
+.contant .right .itmbox .pbox .p_itm_o dt .itm{ background-image:url(../images/folder-o.png); background-position:10px center; background-repeat:no-repeat; color:#333;}
+.contant .right .itmbox .pbox .p_itm_c dt .itm{ background-image:url(../images/folder-c.png); background-position:10px center; background-repeat:no-repeat; color:#666;}
+.contant .right .itmbox .pbox .p_itm_o dd{ display:block}
+.contant .right .itmbox .pbox .p_itm_c dd{ display:none}
+
+.permissioncontent {padding:30px 40px 40px 40px; }
+.permissioncontent .itemExport{float:right; }
+.permissioncontent .itmbox .pbox{ border:1px #ddd solid; padding:20px;}
+.permissioncontent .itmbox .pbox .p_itm dd{ padding-left:20px;}
+.permissioncontent .itmbox .pbox .p_itm dt{ overflow:hidden}
+.permissioncontent .itmbox .pbox .p_itm dt .itm{  line-height:36px; padding:0px 10px 0px 32px;  cursor:pointer; color:#666;}
+.permissioncontent .itmbox .pbox .p_itm dt .itm:hover{ background-color:#eee;}
+.permissioncontent .itmbox .pbox .p_itm_o dt .itm{ background-image:url(../images/folder-o.png); background-position:10px center; background-repeat:no-repeat; color:#333;}
+.permissioncontent .itmbox .pbox .p_itm_c dt .itm{ background-image:url(/_layouts/15/images/itdl.png?rev=23); background-position:10px center; background-repeat:no-repeat; color:#666;}
+.permissioncontent .itmbox .pbox .p_itm_o dd{ display:block}
+.permissioncontent .itmbox .pbox .p_itm_c dd{ display:none}
+.permissioncontent  .nor_btnarea{ padding-top:30px; overflow:hidden}
+.permissioncontent  .nor_btnarea .btn1{ float:left; padding:0px 40px; border:0px; margin-right:20px; text-align:center; line-height:40px; color:#fff; font-size:14px; background:#3094d0;}
+.permissioncontent  .nor_btnarea .btn1:hover{ background:#2b85bb}
+
+
+
+.permissioncontent  .itmbox .cbox{ overflow:hidden;float:left}
+.permissioncontent  .itmbox .cbox .c_li{ float:left;}
+.permissioncontent  .itmbox .cbox .c_t1{ width:400px; border:1px #ddd solid; padding:10px; min-height:200px}
+.permissioncontent  .itmbox .cbox .c_t1 .p_div{ overflow:hidden; padding:0px 10px;}
+.permissioncontent  .itmbox .cbox .c_t1 .p_div:hover{ background:#f5f5f5; }
+.permissioncontent  .itmbox .cbox .c_t1 .p_div label{ float:left; line-height:30px; color:#666;}
+.permissioncontent  .itmbox .cbox .c_t1 .p_div .checkbox{ float:left; height:25px; margin-right:0px; }
+.permissioncontent  .itmbox .cbox .c_t1 .p_div .itm{ background-image:url(/_layouts/15/images/itdl.png?rev=23); background-position:10px center; background-repeat:no-repeat; color:#666;padding-left:32px;line-height:25px;}
+.permissioncontent  .itmbox .cbox .c_t2{ padding:0px 20px;}
+.permissioncontent  .itmbox .cbox .c_t2 .selectbox{ padding:5px; border:1px #ddd solid; background:#f5f5f5;}
+.permissioncontent  .itmbox .cbox .c_t2 .selectbox .select{ line-height:30px; border: medium none; border:none; width:140px; font-size:14px; color:#666; background:#f5f5f5;}
+.permissioncontent  .itmbox .cbox .c_t2 .btn{ margin-top:20px; cursor:pointer; display:block; height:40px; text-align:center; line-height:40px; color:#fff; font-size:14px; background:#3094d0;}
+.permissioncontent  .itmbox .cbox .c_t2 .btn:hover{ background:#2b85bb}
+
+
+.ow_part{ background:#fff; width:600px; margin:0 auto;}
+.ow_part .box{ border:1px #ddd solid;}
+.ow_part .box .title{ line-height:50px; padding:0px 0px 0px 20px; font-weight:bold; font-size:18px; color:#fff; background:#004697; overflow:hidden}
+.ow_part .box .title a{ float:right; width:50px; height:50px; background:url(../images/close.png) center center no-repeat;}
+.ow_part .box .title a:hover{ background:#023b71 url(../images/close.png) center center no-repeat;}
+.ow_part .box .itm_p{ padding:20px;}
+.ow_part .box .itm_p .zqxz{ overflow:hidden;}
+.ow_part .box .itm_p .zqxz a{ float:left; line-height:30px; border:1px #ddd solid; padding:0px 34px 0px 10px; color:#666; font-size:14px; background-color:#f5f5f5; background-image:url(../images/c_3.gif); background-position:right center; background-repeat:no-repeat; margin:5px 10px 5px 0px;}
+.ow_part .box .itm_p .zqxz a:hover{ background-color:#eee; color:#000}
+.ow_part .box .itm_p .ss{ overflow:hidden; padding:40px 0px 20px 0px;}
+.ow_part .box .itm_p .ss span{ float:left; padding-right:10px; line-height:30px; color:#666;}
+.ow_part .box .itm_p .ss .input{ float:left; line-height:28px; height:28px; width:200px; padding:0px 4px; color:#666; font-family:"微软雅黑"; border:1px #ddd solid;}
+.ow_part .box .itm_p .ss .btn{ float:left; width:50px; height:30px; background-color:#3094d0; background-image:url(../images/search_btn.png); background-position:center center; background-repeat:no-repeat;}
+.ow_part .box .itm_p .ss .btn:hover{ background-color:#2b85bb;}
+.ow_part .box .itm_p .ss_e1{ width:300px; margin:0 auto; padding:30px 0px 0px 0px;}
+.ow_part .box .itm_p .ss_e1 span{ line-height:40px; font-size:16px; font-weight:bold;}
+.ow_part .box .itm_p .ss_e1 .input{ line-height:38px; height:38px; font-size:16px;}
+.ow_part .box .itm_p .c_table{ width:100%; border:1px #ddd solid; border-collapse:collapse}
+.ow_part .box .itm_p .c_table td{ padding:5px 10px; border:1px #ddd solid; border-collapse:collapse; line-height:36px; font-size:14px; color:#666; text-align:center}
+.ow_part .box .itm_p .c_table .type{ background:#eee; color:#333; font-weight:bold;}
+.ow_part .box .itm_p .c_table .ta_l{ text-align:left}
+.ow_part .box .itm_p .c_table .cz_itm{ margin:0px 10px; color:#666; line-height:24px; border:1px #ddd solid; background:#f5f5f5; padding:0px 15px; display:inline-block; }
+.ow_part .box .itm_p .c_table .cz_itm:hover{ background:#3094d0; border:1px #3094d0 solid; color:#fff;}
+.ow_part .box .itm_p .c_table .w_1{ width:160px;}
+.ow_part .box .itm_p .c_table .select_box{ padding:5px; border:1px #ddd solid; display:inline-block}
+.ow_part .box .itm_p .c_table .select_box .select{ border: medium none; border:none; font-family:"微软雅黑"; color:#666;}
+.ow_part .box .itm_p .link_box{ text-align:right; padding-bottom:10px;}
+.ow_part .box .itm_p .link_box a{ margin-left:20px; line-height:30px; color:#39c; text-decoration:underline;}
+
+.ow_part .box .itm_p .c_btnarea{ padding:30px 0px 20px 0px; overflow:hidden; text-align:center}
+.ow_part .box .itm_p .c_btnarea .btn1{ display:inline-block; line-height:38px; border:1px #3094d0 solid; width:120px; text-align:center; color:#fff; background:#3094d0; margin:0px 10px;}
+.ow_part .box .itm_p .c_btnarea .btn1:hover{ background:#2b85bb; border:1px #2b85bb solid}
+.ow_part .box .itm_p .c_btnarea .btn2{ display:inline-block; line-height:38px; border:1px #ccc solid; width:120px; text-align:center; color:#666; background:#ddd; margin:0px 10px;}
+.ow_part .box .itm_p .c_btnarea .btn2:hover{ background:#ccc;}
+.ow_part .box .itm_p .e_part { width:100%;}
+.ow_part .box .itm_p .e_part td { padding:5px 0px; height:30px; color:#666;}
+.ow_part .box .itm_p .e_part .type{ width:100px; color:#333;}
+.ow_part .box .itm_p .e_part td .se_box{ padding:5px; border:1px #ddd solid; display:inline-block}
+.ow_part .box .itm_p .e_part td .se_box .select{ border: medium none; border:none; font-family:"微软雅黑"; color:#666;}
+.ow_part .box .itm_p .e_part td label{ margin-right:20px; float:left; line-height:30px;}
+.ow_part .box .itm_p .e_part td .radio_btn{ margin-right:5px; float:left; width:14px; height:14px; margin-top:8px}
+.ow_part .box .itm_p .e_part_btnarea{ padding:20px 0px 20px 100px;}
+.ow_part .box .itm_p .e_part_btnarea .btn1{ background:#3094d0; display:inline-block; padding:0px 40px; color:#fff; font-size:14px; line-height:40px; margin-right:20px;}
+.ow_part .box .itm_p .e_part_btnarea .btn1:hover{ background:#2b85bb}
+
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{ color: #ddd;}
+
+
+.contant .right .itmbox .tbox .page_part{ background:#f7f7f7;}
+.contant .right .itmbox .tbox .page_part ul{ overflow:hidden}
+.contant .right .itmbox .tbox .page_part ul li{ float:left; line-height:24px; font-size:12px; color:#666; padding:0px 8px;}
+.contant .right .itmbox .tbox .page_part ul li img{ border:0px; cursor:pointer }
+.contant .right .itmbox .tbox .page_part ul li .select{ line-height:24px; height:24px; color:#666; font-size:12px; font-family:Arial;}
+.contant .right .itmbox .tbox .page_part ul .i_p{ padding:5px 8px; line-height:14px;}
+.contant .right .itmbox .tbox .page_part ul .i_r{ padding:3px 8px; line-height:18px;}
+.contant .right .itmbox .tbox .page_part ul .i_input_1{ padding:0px 5px;}
+.contant .right .itmbox .tbox .page_part ul .i_input_1 .input{ width:40px; line-height:22px; border:1px #ddd solid; text-align:center; color:#666; font-size:12px; font-family:Arial;}
+
+
+
+.maincontain{ overflow:hidden;}
+.maincontain .right{padding-left:1px;}
+.maincontain .right .itmbox{ padding:40px;    padding-left: 50px;}
+.maincontain .right .itmbox .nor_itm{ overflow:hidden; padding-bottom:10px;}
+.maincontain .right .itmbox .nor_itm dt{ float:left; width:120px; line-height:20px; padding:5px; color:#333;}
+.maincontain .right .itmbox .nor_itm dd{ margin-left:120px; padding:5px; line-height:20px; overflow:hidden}
+.maincontain .right .itmbox .nor_itm dd label {float: right;width: 100px;text-align: left;padding: 0px 0px 1px 0px;margin-right: 25px;line-height: 14px;color: #666;}
+.maincontain .right .itmbox .nor_itm dd .radiobtn{ float:left; width:14px; height:14px; margin-top:3px;}
+
+.maincontain .right .itmbox .nor_btnarea{ padding-top:30px; overflow:hidden}
+.maincontain .right .itmbox .nor_btnarea .btn1{ float:left; padding:0px 40px; border:0px; margin-right:20px; text-align:center; line-height:40px; color:#fff; font-size:14px; background:#3094d0;}
+.maincontain .right .itmbox .nor_btnarea .btn1:hover{ background:#2b85bb}
+
+
+.maincontains .right .file_patch{ height:50px; border-bottom:1px #eee solid; padding:0px 20px; line-height:50px; color:#999; font-size:12px;}
+.maincontains .right .file_patch a{ color:#999;}
+.maincontains .right .file_patch span{ margin:0px 5px;}
+.maincontains .right .itmbox .change_skin{ overflow:hidden;  }
+.maincontains .right .itmbox .change_skin li{ float:left; padding:0px 20px 40px 20px; width:300px; border:0px;}
+.maincontains .right .itmbox .change_skin li img{ width:300px; height:225px;}
+.maincontains .right .itmbox .change_skin li p{ padding-top:20px; text-align:center; font-size:14px; line-height:30px; color:#333;}
+.maincontains .right .itmbox .change_skin li em{ display:block; text-align:center; padding:5px 0px;}
+
+

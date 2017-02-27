@@ -1,0 +1,579 @@
+﻿meta.foundation-version {
+	font-family: "/5.2.3/";
+}
+meta.foundation-mq-small {
+	width: 0px; font-family: "/only screen/";
+}
+meta.foundation-mq-medium {
+	width: 40.06em; font-family: "/only screen and (min-width:40.063em)/";
+}
+meta.foundation-mq-large {
+	width: 64.06em; font-family: "/only screen and (min-width:64.063em)/";
+}
+meta.foundation-mq-xlarge {
+	width: 90.06em; font-family: "/only screen and (min-width:90.063em)/";
+}
+meta.foundation-mq-xxlarge {
+	width: 120.06em; font-family: "/only screen and (min-width:120.063em)/";
+}
+.helpWrapper div {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper ul {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper ol {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper li {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper h1 {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper h2 {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper h3 {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper h4 {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper h5 {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper h6 {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper pre {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper form {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper p {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper blockquote {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper th {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper td {
+	margin: 0px; padding: 0px;
+}
+.helpWrapper ul {
+	line-height: 1.6; font-family: inherit; margin-bottom: 1.25rem; list-style-position: outside;
+}
+.helpWrapper ol {
+	line-height: 1.6; font-family: inherit; margin-bottom: 1.25rem; list-style-position: outside;
+}
+.helpWrapper dl {
+	line-height: 1.6; font-family: inherit; margin-bottom: 1.25rem; list-style-position: outside;
+}
+.helpWrapper .tabs {
+	margin-bottom: 0px !important; margin-left: 0px;
+}
+.helpWrapper .tabs::before {
+	display: table; content: " ";
+}
+.helpWrapper .tabs::after {
+	display: table; content: " ";
+}
+.helpWrapper .tabs::after {
+	clear: both !important;
+}
+.helpWrapper .tabs dd {
+	list-style: none; margin-bottom: 0px !important; float: left; position: relative;
+}
+.helpWrapper .tabs .tab-title {
+	list-style: none; margin-bottom: 0px !important; float: left; position: relative;
+}
+.helpWrapper .tabs dd > a {
+	background: rgb(239, 239, 239); padding: 1rem 2rem; color: rgb(34, 34, 34); font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif; font-size: 1rem; display: block;
+}
+.helpWrapper .tabs .tab-title > a {
+	background: rgb(239, 239, 239); padding: 1rem 2rem; color: rgb(34, 34, 34); font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif; font-size: 1rem; display: block;
+}
+.helpWrapper .tabs dd > a:hover {
+	background: rgb(225, 225, 225);
+}
+.helpWrapper .tabs .tab-title > a:hover {
+	background: rgb(225, 225, 225);
+}
+.helpWrapper.tabs dd.active a {
+	background: rgb(255, 255, 255); color: rgb(34, 34, 34);
+}
+.helpWrapper .tabs .active.tab-title a {
+	background: rgb(255, 255, 255); color: rgb(34, 34, 34);
+}
+.helpWrapper .radius.tabs dd:first-child a {
+	border-top-left-radius: 3px; border-bottom-left-radius: 3px;
+}
+.helpWrapper .radius.tabs :first-child.tab a {
+	border-top-left-radius: 3px; border-bottom-left-radius: 3px;
+}
+.helpWrapper .radius.tabs dd:last-child a {
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+}
+.helpWrapper .radius.tabs :last-child.tab a {
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+}
+.helpWrapper .vertical.tabs dd {
+	top: auto; float: none; display: block; position: inherit;
+}
+.helpWrapper .vertical.tabs .tab {
+	top: auto; float: none; display: block; position: inherit;
+}
+.helpWrapper .tabs-content {
+	width: 100%; margin-bottom: 1.5rem;
+}
+.helpWrapper .tabs-content::before {
+	display: table; content: " ";
+}
+.helpWrapper .tabs-content::after {
+	display: table; content: " ";
+}
+.helpWrapper  .tabs-content::after {
+	clear: both;
+}
+.helpWrapper .tabs-content > .content {
+	padding: 0.93em 0px; width: 100%; float: left; display: none;
+}
+.helpWrapper .tabs-content > .active.content {
+	float: none; display: block;
+}
+.helpWrapper .tabs-content > .contained.content {
+	padding: 0.93em;
+}
+.helpWrapper .vertical.tabs-content {
+	display: block;
+}
+.helpWrapper .vertical.tabs-content > .content {
+	padding: 0px 0.93em;
+}
+.helpWrapper .HelpControlResults {
+	background: rgb(255, 255, 255); width: 81.1%; clear: both; margin-left: 18.9%;
+}
+#findItMyselfResults h2 {
+	padding: 7px 0px;
+}
+.helpWrapper .askTheExperts-result {
+	padding: 10px;
+}
+.helpWrapper .HelpControlResults > div {
+	display: none;
+}
+.helpWrapper .helpWrapper {
+	padding-bottom: 25px; margin-top: -39px;
+}
+.helpWrapper .category {
+	height: 120px;
+}
+.helpWrapper .category span {
+	color: rgb(255, 255, 255) !important;
+}
+.helpWrapper .main-table-content a {
+	color: #0072c6; font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif; font-size: 14px;
+}
+@media only screen and (min-width:40.06em)
+{
+.helpWrapper .vertical.tabs {
+	width: 20%; margin-bottom: 1.25rem; float: left;
+}
+.helpWrapper .vertical.tabs-content {
+	width: 80%; margin-left: -1px; float: left;
+}
+}
+.helpWrapper .no-js .tabs-content > .content {
+	float: none; display: block;
+}
+.helpWrapper label {
+	color: rgb(77, 77, 77); line-height: 1.5; font-weight: 400; margin-bottom: 0px; display: block; cursor: pointer;
+}
+.helpWrapper .HelpControl h1 {
+	margin: 15px 0px; color: rgb(0, 129, 114); font-size: 24px;
+}
+.helpWrapper .vertical.tabs {
+	background: #0072c6; padding-right: 12px; margin-bottom: 0px; min-height: 120px;
+}
+.helpWrapper .vertical.tabs-content {
+	background: #0072c6; padding-right: 12px; margin-bottom: 0px; min-height: 120px;
+}
+.helpWrapper .tabs {
+	height: 120px;
+}
+.helpWrapper .tabs .tab-title > a {
+	background: rgb(229, 229, 229); padding: 9px 15px; width: auto; line-height: 19px; font-size: 12px;
+}
+.helpWrapper ul.tabs li:nth-child(2) {
+	border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.helpWrapper .tabs .tab-title > a:hover {
+	background: rgb(229, 236, 235); text-decoration: none;
+}
+.helpWrapper .tabs .active.tab-title a {
+	background: #0072c6; color: rgb(255, 255, 255) !important;
+}
+.helpWrapper .tabs .tab-title {
+	border-width: 1px 0px 0px; border-style: solid none none; border-color: rgb(255, 255, 255) currentColor currentColor; margin: 0px; padding: 0px; width: auto; height: 40px; text-transform: uppercase; float: none; display: block; white-space: nowrap !important;
+}
+.helpWrapper .tabs :first-of-type.tab-title {
+	border-top-color: currentColor; border-top-width: 0px; border-top-style: none;
+}
+.helpWrapper .tabs .tab-title > a {
+	border: 0px currentColor; height: 40px;
+}
+.helpWrapper .tabs-content {
+	min-height: 120px !important;
+}
+.helpWrapper .tabs {
+	min-height: 120px !important;
+}
+#getAssistance a {
+	white-space: nowrap;
+}
+.helpWrapper .tabs-content .tab-help p {
+	color: rgb(255, 255, 255); padding-top: 10px; font-size: 14px; margin-bottom: 20px;
+}
+.helpWrapper .tabs-content .tab-button {
+	background: rgb(80, 80, 80); padding: 5px 20px; color: rgb(255, 255, 255) !important; font-size: 12px;
+}
+.helpWrapper .tabs-content .tab-button a {
+	color: rgb(255, 255, 255) !important;
+}
+.helpWrapper .tabs-content .tab-button a:visited {
+	color: rgb(255, 255, 255) !important;
+}
+.helpWrapper div.main-table-content table {
+	float: none !important;
+}
+.helpWrapper .itemB {
+	display: none;
+}
+.helpWrapper .itemC {
+	display: none;
+}
+#findItMyselfResults {
+	overflow: auto;
+}
+.helpWrapper .category {
+	padding: 25px 0px; text-align: center; color: rgb(255, 255, 255); position: relative; max-width: 128px; white-space-collapse: discard;
+}
+.helpWrapper .category span {
+	display: block;
+}
+.helpWrapper .category img {
+	margin: 0px auto 5px !important; display: block;
+}
+.helpWrapper .category a {
+	color: rgb(255, 255, 255); display: block;
+}
+.helpWrapper .category a:hover {
+	text-decoration: none;
+}
+.helpWrapper .category:hover {
+	background: #104E8B;
+}
+.helpWrapper .category:active {
+	background: #104E8B;
+}
+.helpWrapper .category br {
+	display: none;
+}
+.helpWrapper .category a div span {
+	font-size: 14px !important;
+}
+.helpWrapper .category span::after {
+	margin: 0px auto; width: 0px; height: 0px; bottom: -6px; border-right-color: transparent; border-bottom-color: rgb(255, 255, 255); border-left-color: transparent; border-right-width: 20px; border-bottom-width: 20px; border-left-width: 20px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; display: none; position: relative;
+}
+.helpWrapper .category .selected span {
+	display: block;
+}
+.helpWrapper .category label {
+	color: rgb(255, 255, 255); padding-top: 5px;
+}
+.helpWrapper .owl-controls {
+	position: relative;
+}
+.helpWrapper .owl-carousel .owl-wrapper-outer {
+	position: absolute;
+}
+.helpWrapper .owl-theme .owl-controls .owl-buttons div.owl-prev {
+	top: 43px; width: 0px; height: 0px; border-top-color: transparent; border-right-color: rgb(255, 255, 255); border-bottom-color: transparent; border-top-width: 15px; border-right-width: 15px; border-bottom-width: 15px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; position: absolute;
+}
+.helpWrapper .owl-theme .owl-controls .owl-buttons div.owl-next {
+	top: 43px; width: 0px; height: 0px; right: 0px; margin-right: -12px; border-top-color: transparent; border-bottom-color: transparent; border-left-color: rgb(255, 255, 255); border-top-width: 15px; border-bottom-width: 15px; border-left-width: 15px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid; position: absolute;
+}
+.helpWrapper .owl-buttons .disabled {
+	display: none;
+}
+.helpWrapper .owl-wrapper-outer .selected.category {
+	background: #104E8B;
+}
+.helpWrapper .owl-wrapper-outer {
+	margin-left: 24px; max-width: 870px;
+}
+.helpWrapper .HelpControlResults table {
+	width: 100% !important; height: auto !important; table-layout: auto !important;
+}
+.helpWrapper .HelpControlResults .experts {
+	background: rgb(255, 255, 255); padding: 10px 15px; margin-left: 20%;
+}
+.helpWrapper .help-info .more-info {
+	background: rgb(255, 255, 255); width: 100%; overflow: hidden; margin-top: 116px; display: none;
+}
+.helpWrapper .help-info .more-info div {
+	background: rgb(255, 255, 255);
+}
+.helpWrapper .help-info div.show.more-info h2 {
+	padding: 5px 0px;
+}
+.helpWrapper .help-info .show.more-info {
+	display: block;
+}
+.helpWrapper .help-info .ask-button a {
+	color: rgb(255, 255, 255);
+}
+.helpWrapper .help-info .ask-button a:visited {
+	color: rgb(255, 255, 255);
+}
+.helpWrapper .help-info .ask-button {
+	background: rgb(80, 80, 80); text-align: center; color: rgb(230, 230, 230); font-size: 12px; margin-top: 25px; max-width: 200px;
+}
+.helpWrapper .help-info a {
+	padding: 5px; display: block;
+}
+@media only screen and (min-width:768px)
+{
+.helpWrapper .tabs :last-of-type.tab-title {
+	height: 39px;
+}
+.helpWrapper .tabs :last-of-type.tab-title a {
+	height: 39px;
+}
+}
+@media only screen and (max-width:850px) and (min-width:768px)
+{
+.helpWrapper li.ms-navedit-editArea.ms-listMenu-editLink.ms-verticalAlignTop.static {
+	display: none;
+}
+}
+@media only screen and (max-width:830px) and (min-width:768px)
+{
+.helpWrapper .slide_container div.ms-EmphasisBackground-bgColor {
+	right: 0px !important; position: absolute !important;
+}
+}
+@media only screen and (max-width:768px)
+{
+.helpWrapper .tab-help {
+	min-height: 110px;
+}
+.helpWrapper .tabs .tab-title > a {
+	border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#getAssistance {
+	padding-right: 5px; padding-left: 5px;
+}
+#getAssistance .tab-help {
+	padding-right: 5px; padding-left: 5px;
+}
+.helpWrapper .category {
+	margin: auto;
+}
+.helpWrapper .HelpControlResults .experts {
+	margin-left: 0px;
+}
+.helpWrapper .owl-wrapper-outer {
+	margin-left: 0px;
+}
+.helpWrapper .HelpControlResults .main-table-content td {
+	width: 100% !important; padding-top: 10px; padding-left: 0px !important; display: block;
+}
+}
+@media only screen and (max-width:768px)
+{
+#getAssistance .tab-help p {
+	
+}
+#getAssistance .tab-help .tab-button {
+	padding: 5px 10px; margin-top: 10px; display: block;
+}
+#getAssistance .tab-help .tab-button a {
+	white-space: normal;
+}
+.helpWrapper .vertical.tabs {
+	padding-right: 0px;
+}
+.helpWrapper .vertical.tabs-content {
+	padding-right: 0px;
+}
+.helpWrapper .owl-theme .owl-controls .owl-buttons div.owl-next {
+	margin-right: 0px;
+}
+.helpWrapper .owl-item {
+	width: 100px;
+}
+.helpWrapper .HelpControlResults {
+	width: 100%; margin-left: 0px;
+}
+.helpWrapper .helpWrapper {
+	margin-top: 0px;
+}
+}
+@media not all
+{
+.helpWrapper .vertical.tabs {
+	min-height: 120px;
+}
+.helpWrapper .vertical.tabs-content {
+	min-height: 120px;
+}
+.helpWrapper .category {
+	height: 120px;
+}
+.helpWrapper .tabs .tab-title > a {
+	padding: 10px 15px 9px;
+}
+.helpWrapper .tabs :last-of-type.tab-title > a {
+	padding-bottom: 10px;
+}
+}
+@media only screen and (min-width:768px)
+{
+.helpWrapper div.slide_container {
+	background: inherit;
+}
+.helpWrapper div.slide-image {
+	margin: 0px; padding: 0px; width: 60%; float: left;
+}
+.helpWrapper div.slide_imageContainer {
+	width: 100%;
+}
+.helpWrapper .slide_imageContainer img {
+	min-height: 318px; min-width: 600px; max-width: 683px;
+}
+.helpWrapper .slide_container div.ms-EmphasisBackground-bgColor {
+	width: 40%; float: right;
+}
+.helpWrapper div.slide_inheritBackground.slide_contentContainer {
+	width: auto; padding-right: 70px;
+}
+}
+@media only screen and (max-width:768px)
+{
+.helpWrapper div.slide_container {
+	background: inherit;
+}
+.helpWrapper div.slide_contentContainer {
+	width: 100%; padding-left: 16px;
+}
+.helpWrapper div.slide_imageContainer img {
+	max-height: 235px;
+}
+.helpWrapper div.slide_imageContainer {
+	text-align: center; overflow: hidden;
+}
+.helpWrapper div.slide_imageContainer img {
+	left: 100%; margin-left: -200%; position: relative;
+}
+}
+
+.helpWrapper .column {
+	padding-right: 0.93rem; padding-left: 0.93rem; float: left; position: relative;
+}
+.helpWrapper .columns {
+	float: left; position: relative;
+}
+.helpWrapper .large-1 {
+	width: 8.33%;
+}
+.helpWrapper .large-2 {
+	width: 16.66%;
+}
+.helpWrapper .large-3 {
+	width: 25%;
+}
+.helpWrapper .large-4 {
+	width: 33.33%;
+}
+.helpWrapper .large-5 {
+	width: 41.66%;
+}
+.helpWrapper .large-6 {
+	width: 50%;
+}
+.helpWrapper.large-7 {
+	width: 58.33%;
+}
+.helpWrapper .large-8 {
+	width: 66.66%;
+}
+.helpWrapper .large-9 {
+	width: 75%;
+}
+.helpWrapper .large-10 {
+	width: 83.33%;
+}
+.helpWrapper .large-11 {
+	width: 91.66%;
+}
+.helpWrapper .large-12 {
+	width: 100%;
+}
+
+.helpWrapper .row {
+	width:100%;
+	margin:0px auto;
+	max-width: 1200px;
+}
+
+.helpWrapper * {
+	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.helpWrapper *::before {
+	box-sizing: border-box!important; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.helpWrapper *::after {
+	box-sizing: border-box!important; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+
+.helpWrapper  .owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	width: 100%;
+}
+
+.helpWrapper .owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+
+.helpWrapper .owl-carousel .owl-item{
+	float: left;
+}
+
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}

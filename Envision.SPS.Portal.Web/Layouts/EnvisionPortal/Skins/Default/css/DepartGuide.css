@@ -1,0 +1,55 @@
+﻿/* CSS Document */
+
+div,ul,li,h1,h2,h3,h4,p,span,input,dl,dt,dd,table,form{ margin:0; padding:0; list-style:none; font-size:14px; font-family:"Microsoft Yahei","微软雅黑", Arial, Helvetica, sans-serif;}
+
+a:link,a:visited,a:hover,a:active{text-decoration:none;}
+
+.clear{ clear:both; margin:0; padding:0; list-style:none; height:0px; line-height:0px;}
+
+body{ margin:0 auto;}
+
+
+.top{ margin:0 auto; background:#3476b2; min-width:1200px;}
+.top .box{ height:60px; margin:0 auto; width:1200px;}
+.top .box h4{ background:url(../images/logo_support.png) 0px center no-repeat; float:left; height:60px; width:400px;}
+.top .box span{ float:right; height:60px; padding-left:50px; background:url(../images/i_1.png) left center no-repeat; padding-right:10px; color:#fff; font-size:14px; line-height:60px;}
+.top .box .h_btn{ width:60px; height:60px; float:right; border-left:1px #5c90c0 solid; background:url(../images/i_4.png) center center no-repeat}
+.top .box .h_btn:hover{ background:url(../images/i_4_1.png) center center no-repeat}
+
+.contant{ width:1200px; margin:0 auto; overflow:hidden}
+.department_choice{ border-bottom:1px #ddd solid; margin-bottom:10px; overflow:hidden; font-size:14px; }
+.department_choice .dep_part{ width:960px; padding:20px 0px 10px 0px; overflow:hidden}
+.department_choice .dep_part .dep{ float:left; margin-right:10px; padding:0px 10px; margin-bottom:10px; font-size:16px; line-height:30px; color:#333;}
+.department_choice .dep_part .dep:hover{ color:#000; background:#f0f0f0;}
+.department_choice .dep_part .hover{ background:#85c02e; color:#fff;}
+.department_choice .dep_part .hover:hover{ background:#85c02e; color:#fff;}
+.department_choice .search_part{ float:right; width:240px; height:30px; padding:20px 0px 10px 0px;}
+.department_choice .search_part .input{ float:left; border:1px #ddd solid; font-size:14px; color:#666; width:178px; border-right:0px; line-height:28px; height:28px; padding:0px 5px;}
+.department_choice .search_part .btn{ float:left; width:50px; height:30px; background:#00a2e4 url(../images/search_btn.png) center center no-repeat;}
+.department_choice .search_part .btn:hover{ background-color:#0090ca}
+
+.FAQ_box{ float:left; width:780px; float:left; padding:0px 20px 10px 0px;}
+.FAQ_box dl{ padding:30px 0px 40px 0px; border-bottom:3px #eee solid;}
+.FAQ_box dl dt{ font-size:30px; color:#000; line-height:36px; padding-bottom:20px;}
+.FAQ_box dl dd{ font-size:14px; line-height:24px; color:#666;}
+
+.FAQ_list{ width:380px; float:left; padding:10px 0px 10px 20px;}
+.FAQ_list dt{ line-height:36px; font-size:24px; color:#999; padding:20px 0px 10px 0px; border-bottom:2px #ccc solid;}
+.FAQ_list dd{}
+.FAQ_list dd table{ width:100%;}
+.FAQ_list dd table td{ padding:15px 10px; border-bottom:1px #ddd solid; vertical-align:middle;}
+.FAQ_list dd table td a{ display:block; line-height:20px; font-size:14px; font-weight:500; color:#333;}
+.FAQ_list dd table td:hover{ background:#eee;}
+
+.FAQ_list dd table .hover{ background:#00a2e4;}
+.FAQ_list dd table .hover a{ color:#fff; font-size:16px;}
+.FAQ_list dd table .hover:hover{ background:#00a2e4;}
+
+.FAQ_attachment{ padding:20px 20px 0px 0px;}
+.FAQ_attachment table{ width:100%; border-top:1px #ddd dashed}
+.FAQ_attachment table td{ vertical-align:top; line-height:34px; font-size:14px; color:#666;}
+.FAQ_attachment table td div{ padding:5px 0px 5px 14px; background:url(../images/dot.gif) left center no-repeat}
+.FAQ_attachment table td div a{ line-height:24px; color:#06c; font-size:14px;}
+.FAQ_attachment table td div a:hover{ text-decoration:underline}
+.FAQ_attachment .type{color:#000; font-size:20px; height:48px; line-height:48px;}
+

@@ -1,0 +1,134 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Envision.SPS.Document.Web", "Envision.SPS.Document.Web\Envision.SPS.Document.Web.csproj", "{6C5D5E58-F24D-415C-ADEA-60F8072BD1EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Envision.SPS.Common", "Envision.SPS.Common", "{3E26EE37-CDAE-4D31-AA1F-625D218019CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Envision.SPS.DataAccess", "Envision.SPS.DataAccess\Envision.SPS.DataAccess.csproj", "{DA5D5C31-B454-4683-A0E3-B91B04CEF01A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Envision.SPS.Utility", "Envision.SPS.Utility\Envision.SPS.Utility.csproj", "{341B41D1-9B11-4EFF-8D46-30FBAEB65ABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Envision.SPS.API", "Envision.SPS.API\Envision.SPS.API.csproj", "{5ACD4A6B-3373-40C7-B36B-BE7A80C728B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Envision.SPS.Web", "Envision.SPS.Web", "{3E4F7598-06B6-48EC-91E4-D9854C3330F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Envision.SPS.Portal.Web", "Envision.SPS.Portal.Web\Envision.SPS.Portal.Web.csproj", "{42D794F7-8FF8-408F-82F0-C350D0E115E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Envision.SPS.SyncService", "Envision.SPS.SyncService", "{9020C85E-ADB2-4206-99E9-48FB54F45BA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RefereceLibraries", "RefereceLibraries", "{3A7397C3-062F-401C-9C6E-7BEFE1180737}"
+	ProjectSection(SolutionItems) = preProject
+		RefereceLibraries\AspNetPager.dll = RefereceLibraries\AspNetPager.dll
+		RefereceLibraries\ICSharpCode.SharpZipLib.dll = RefereceLibraries\ICSharpCode.SharpZipLib.dll
+		RefereceLibraries\Microsoft.Exchange.WebServices.dll = RefereceLibraries\Microsoft.Exchange.WebServices.dll
+		..\..\..\..\..\Users\administrator.SPTEST\Desktop\NPOI\NPOI.dll = ..\..\..\..\..\Users\administrator.SPTEST\Desktop\NPOI\NPOI.dll
+		..\..\..\..\..\Users\administrator.SPTEST\Desktop\NPOI\NPOI.OOXML.dll = ..\..\..\..\..\Users\administrator.SPTEST\Desktop\NPOI\NPOI.OOXML.dll
+		..\..\..\..\..\Users\administrator.SPTEST\Desktop\NPOI\NPOI.OpenXml4Net.dll = ..\..\..\..\..\Users\administrator.SPTEST\Desktop\NPOI\NPOI.OpenXml4Net.dll
+		..\..\..\..\..\Users\administrator.SPTEST\Desktop\NPOI\NPOI.OpenXmlFormats.dll = ..\..\..\..\..\Users\administrator.SPTEST\Desktop\NPOI\NPOI.OpenXmlFormats.dll
+		RefereceLibraries\Telerik.Web.UI.dll = RefereceLibraries\Telerik.Web.UI.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPSStorageMonitor", "Envision.SPS.SyncService\SPSStorageMonitor\SPSStorageMonitor.csproj", "{C05F38AB-C73E-42B2-8AAB-D42103793FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableMemberEmailSend", "DisableMemberEmailSend\DisableMemberEmailSend.csproj", "{B8E3E478-5084-4980-82C3-982C2FE8F5AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Envision.SPS.EventBus", "Envision.SPS.SyncService\Envision.SPS.EventBus\Envision.SPS.EventBus.csproj", "{5D7B23B2-AF29-4CA2-B33E-62168055CA65}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://120.26.107.116:8080/tfs/envision
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Envision.SPS.API\\Envision.SPS.API.csproj
+		SccProjectTopLevelParentUniqueName1 = Envision.SPS.sln
+		SccProjectName1 = Envision.SPS.API
+		SccLocalPath1 = Envision.SPS.API
+		SccProjectUniqueName2 = Envision.SPS.DataAccess\\Envision.SPS.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName2 = Envision.SPS.sln
+		SccProjectName2 = Envision.SPS.DataAccess
+		SccLocalPath2 = Envision.SPS.DataAccess
+		SccProjectUniqueName3 = Envision.SPS.Document.Web\\Envision.SPS.Document.Web.csproj
+		SccProjectTopLevelParentUniqueName3 = Envision.SPS.sln
+		SccProjectName3 = Envision.SPS.Document.Web
+		SccLocalPath3 = Envision.SPS.Document.Web
+		SccProjectUniqueName4 = Envision.SPS.Utility\\Envision.SPS.Utility.csproj
+		SccProjectTopLevelParentUniqueName4 = Envision.SPS.sln
+		SccProjectName4 = Envision.SPS.Utility
+		SccLocalPath4 = Envision.SPS.Utility
+		SccProjectUniqueName5 = Envision.SPS.SyncService\\SPSStorageMonitor\\SPSStorageMonitor.csproj
+		SccProjectTopLevelParentUniqueName5 = Envision.SPS.sln
+		SccProjectName5 = Envision.SPS.SyncService/SPSStorageMonitor
+		SccLocalPath5 = Envision.SPS.SyncService\\SPSStorageMonitor
+		SccProjectUniqueName6 = DisableMemberEmailSend\\DisableMemberEmailSend.csproj
+		SccProjectTopLevelParentUniqueName6 = Envision.SPS.sln
+		SccProjectName6 = DisableMemberEmailSend
+		SccLocalPath6 = DisableMemberEmailSend
+		SccProjectUniqueName7 = Envision.SPS.Portal.Web\\Envision.SPS.Portal.Web.csproj
+		SccProjectTopLevelParentUniqueName7 = Envision.SPS.sln
+		SccProjectName7 = Envision.SPS.Portal.Web
+		SccLocalPath7 = Envision.SPS.Portal.Web
+		SccProjectUniqueName8 = Envision.SPS.SyncService\\Envision.SPS.EventBus\\Envision.SPS.EventBus.csproj
+		SccProjectTopLevelParentUniqueName8 = Envision.SPS.sln
+		SccProjectName8 = Envision.SPS.SyncService/Envision.SPS.EventBus
+		SccLocalPath8 = Envision.SPS.SyncService\\Envision.SPS.EventBus
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C5D5E58-F24D-415C-ADEA-60F8072BD1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C5D5E58-F24D-415C-ADEA-60F8072BD1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C5D5E58-F24D-415C-ADEA-60F8072BD1EB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6C5D5E58-F24D-415C-ADEA-60F8072BD1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C5D5E58-F24D-415C-ADEA-60F8072BD1EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C5D5E58-F24D-415C-ADEA-60F8072BD1EB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DA5D5C31-B454-4683-A0E3-B91B04CEF01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA5D5C31-B454-4683-A0E3-B91B04CEF01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA5D5C31-B454-4683-A0E3-B91B04CEF01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA5D5C31-B454-4683-A0E3-B91B04CEF01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341B41D1-9B11-4EFF-8D46-30FBAEB65ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341B41D1-9B11-4EFF-8D46-30FBAEB65ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341B41D1-9B11-4EFF-8D46-30FBAEB65ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341B41D1-9B11-4EFF-8D46-30FBAEB65ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ACD4A6B-3373-40C7-B36B-BE7A80C728B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACD4A6B-3373-40C7-B36B-BE7A80C728B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACD4A6B-3373-40C7-B36B-BE7A80C728B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACD4A6B-3373-40C7-B36B-BE7A80C728B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D794F7-8FF8-408F-82F0-C350D0E115E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D794F7-8FF8-408F-82F0-C350D0E115E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D794F7-8FF8-408F-82F0-C350D0E115E4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{42D794F7-8FF8-408F-82F0-C350D0E115E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D794F7-8FF8-408F-82F0-C350D0E115E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D794F7-8FF8-408F-82F0-C350D0E115E4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C05F38AB-C73E-42B2-8AAB-D42103793FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05F38AB-C73E-42B2-8AAB-D42103793FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05F38AB-C73E-42B2-8AAB-D42103793FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05F38AB-C73E-42B2-8AAB-D42103793FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E3E478-5084-4980-82C3-982C2FE8F5AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E3E478-5084-4980-82C3-982C2FE8F5AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E3E478-5084-4980-82C3-982C2FE8F5AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E3E478-5084-4980-82C3-982C2FE8F5AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D7B23B2-AF29-4CA2-B33E-62168055CA65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7B23B2-AF29-4CA2-B33E-62168055CA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7B23B2-AF29-4CA2-B33E-62168055CA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7B23B2-AF29-4CA2-B33E-62168055CA65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C5D5E58-F24D-415C-ADEA-60F8072BD1EB} = {3E4F7598-06B6-48EC-91E4-D9854C3330F3}
+		{42D794F7-8FF8-408F-82F0-C350D0E115E4} = {3E4F7598-06B6-48EC-91E4-D9854C3330F3}
+		{DA5D5C31-B454-4683-A0E3-B91B04CEF01A} = {3E26EE37-CDAE-4D31-AA1F-625D218019CE}
+		{341B41D1-9B11-4EFF-8D46-30FBAEB65ABA} = {3E26EE37-CDAE-4D31-AA1F-625D218019CE}
+		{5ACD4A6B-3373-40C7-B36B-BE7A80C728B8} = {3E26EE37-CDAE-4D31-AA1F-625D218019CE}
+		{C05F38AB-C73E-42B2-8AAB-D42103793FBA} = {9020C85E-ADB2-4206-99E9-48FB54F45BA7}
+		{B8E3E478-5084-4980-82C3-982C2FE8F5AF} = {9020C85E-ADB2-4206-99E9-48FB54F45BA7}
+		{5D7B23B2-AF29-4CA2-B33E-62168055CA65} = {9020C85E-ADB2-4206-99E9-48FB54F45BA7}
+	EndGlobalSection
+EndGlobal

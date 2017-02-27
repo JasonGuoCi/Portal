@@ -1,0 +1,108 @@
+/* CSS Document */
+div,ul,li,h1,h2,h3,p,span,input,dl,dt,dd,table,form{ margin:0; font-size:14px; padding:0; list-style:none; font-family:segoe ui, Arial, "微软雅黑";}
+
+a:link,a:visited,a:hover,a:active{text-decoration:none;}
+
+.clear{ clear:both; margin:0; padding:0; list-style:none; height:0px; line-height:0px;}
+
+body{ margin:0 auto; background:#fff url(../img/line_1.gif) 180px top repeat-y;}
+
+.top{ height:60px; background:#004697 url(../img/logo.jpg) left center no-repeat; padding-left:180px;}
+.top .nav{ float:left; line-height:60px; text-align:center; color:#fff; padding:0px 20px; font-size:14px;}
+.top .nav:hover{ background:#023b71}
+.top .user_part{ float:right; height:60px; width:180px; margin-right:20px;}
+.top .user_part .img{ float:right; width:50px; height:50px; border:0px; border-radius:100%; margin-top:5px;}
+.top .user_part  span{ float:right; width:120px; padding-right:10px; line-height:60px; color:#fff;}
+.top .search_part{ border-radius:30px; padding-right:6px; overflow:hidden; float:right; background:#4d87c0; width:200px; height:24px; margin-top:18px; margin-right:20px;}
+.top .search_part .input{ float:left; border:0px; border-radius:30px; width:166px; padding-left:10px; background:#4d87c0; line-height:24px; font-size:14px; color:#fff;}
+.top .search_part a{ float:left; width:24px; height:24px; background:url(../img/search_btn.png) center center no-repeat;}
+
+.contant{ overflow:hidden;}
+.contant .left{ float:left; width:160px; padding:10px;}
+.contant .left .submenu{}
+.contant .left .submenu .menu{ display:block; height:40px; line-height:40px; padding-left:20px; font-size:14px;}
+.contant .left .submenu .menu:hover{ background-color:#f5f5f5;}
+.contant .left .submenu .hover{ background-color:#eee;}
+.contant .left .submenu .hover:hover{ background-color:#eee;}
+.contant .left .submenu dt .menu{ padding-left:30px; color:#333;}
+.contant .left .submenu dd .menu{ padding-left:40px; color:#666;}
+.contant .left .submenu .o_p .m_pd{ background-image:url(../img/c_2.gif); background-position:10px center; background-repeat:no-repeat}
+.contant .left .submenu .c_p .m_pd{ background-image:url(../img/c_1.gif); background-position:10px center; background-repeat:no-repeat}
+.contant .left .submenu .c_p dd{ display:none;}
+
+
+.right{ margin-left:35px; padding-left:10px;}
+.right .file_patch{ height:50px; border-bottom:1px #eee solid; padding:0px 20px; line-height:50px; color:#999; font-size:12px;}
+.right .file_patch a{ color:#999;}
+.right .file_patch span{ margin:0px 5px;}
+
+.right .itmbox{ padding:40px;}
+.right .itmbox .t_search{ height:40px; overflow:hidden; padding:10px 10px 30px 10px;}
+.right .itmbox .t_search .type{ float:left; line-height:40px; color:#666; font-size:14px; color:#666; padding-right:5px;}
+.right .itmbox .t_search .add_dp{ float:right; line-height:40px; color:#39c; text-decoration:underline; padding-left:20px; background:url(../img/i_1.png) left center no-repeat;}
+.right .itmbox .t_search .add{ float:right; line-height:40px; color:#39c; text-decoration:underline; padding-left:20px; background:url(../img/i_3.png) left center no-repeat;}
+.right .itmbox .t_search .s_btn{ float:left; background:#3094d0; padding:0px 25px; line-height:40px; text-align:center; font-size:14px; color:#fff;}
+.right .itmbox .t_search .s_btn:hover{ background:#2b85bb}
+.right .itmbox .t_search .s_iput{ float:left; height:38px; border:1px #ddd solid; width:300px; padding:0px 5px; line-height:38px; font-size:14px; color:#666;}
+
+.right .itmbox .tbox{ width:100%; border:1px #ddd solid; border-collapse:collapse;}
+.right .itmbox .tbox td{ border:1px #ddd solid; border-collapse:collapse; text-align:center; line-height:22px; padding:10px 5px; color:#666; font-size:14px;}
+.right .itmbox .tbox .type{ background:#eee; color:#000;}
+.right .itmbox .tbox .t_left{ text-align:left;}
+.right .itmbox .tbox .w_1{ width:150px;}
+.right .itmbox .tbox .w_2{ width:250px;}
+.right .itmbox .tbox .edit{ display:block; padding-left:20px; background:url(../img/i_2.png) left center no-repeat; line-height:22px; width:40px; color:#39c; text-decoration:underline; margin:0 auto;}
+.right .itmbox .tbox .imp{ background:#FF9}
+.right .itmbox .tbox .nor_link{ color:#39c; text-decoration:underline; margin:0px 10px;}
+
+.contant .right .itmbox .tbox .page_part{ background:#f7f7f7;}
+.contant .right .itmbox .tbox .page_part ul{ overflow:hidden}
+.contant .right .itmbox .tbox .page_part ul li{ float:left; line-height:24px; font-size:12px; color:#666; padding:0px 8px;}
+.contant .right .itmbox .tbox .page_part ul li img{ border:0px; cursor:pointer }
+.contant .right .itmbox .tbox .page_part ul li .select{ line-height:24px; height:24px; color:#666; font-size:12px; font-family:Arial;}
+.contant .right .itmbox .tbox .page_part ul .i_p{ padding:5px 8px; line-height:14px;}
+.contant .right .itmbox .tbox .page_part ul .i_r{ padding:3px 8px; line-height:18px;}
+.contant .right .itmbox .tbox .page_part ul .i_input_1{ padding:0px 5px;}
+.contant .right .itmbox .tbox .page_part ul .i_input_1 .input{ width:40px; line-height:22px; border:1px #ddd solid; text-align:center; color:#666; font-size:12px; font-family:Arial;}
+
+
+.right .itmbox .change_skin{ overflow:hidden; }
+.right .itmbox .change_skin li{ float:left; padding:0px 20px 40px 20px; width:300px; border:0px;}
+.right .itmbox .change_skin li img{ width:300px; height:225px;}
+.right .itmbox .change_skin li p{ padding-top:20px; text-align:center; font-size:14px; line-height:30px; color:#333;}
+.right .itmbox .change_skin li em{ display:block; text-align:center; padding:5px 0px;}
+
+
+.right .itmbox .nor_itm{ overflow:hidden; padding-bottom:10px;}
+.right .itmbox .nor_itm dt{ float:left; width:120px; line-height:20px; padding:5px; color:#333;}
+.right .itmbox .nor_itm dd{ margin-left:120px; padding:5px; line-height:20px; overflow:hidden}
+.right .itmbox .nor_itm dd label{ float:right; padding:0px 0px 0px 0px; margin-right: 65px; line-height:20px; color:#666;}
+.right .itmbox .nor_itm dd .radiobtn{ float:left; width:14px; height:14px; margin-top:3px;}
+.right .itmbox .nor_btnarea{ padding-top:30px; overflow:hidden}
+.right .itmbox .nor_btnarea .btn1{ float:left; padding:0px 40px; border:0px; margin-right:20px; text-align:center; line-height:40px; color:#fff; font-size:14px; background:#39f;}
+.right .itmbox .nor_btnarea .btn1:hover{ background:#2f8ae4}
+
+.right .itmbox .cbox{ overflow:hidden}
+.right .itmbox .cbox .c_li{ float:left;}
+.right .itmbox .cbox .c_t1{ width:400px; border:1px #ddd solid; padding:10px; min-height:200px}
+.right .itmbox .cbox .c_t1 .p_div{ overflow:hidden; padding:0px 10px;}
+.right .itmbox .cbox .c_t1 .p_div:hover{ background:#f5f5f5; }
+.right .itmbox .cbox .c_t1 .p_div label{ float:left; line-height:30px; color:#666;}
+.right .itmbox .cbox .c_t1 .p_div .checkbox{ float:left; width:12px; height:12px; margin-right:10px; margin-top:9px;}
+.right .itmbox .cbox .c_t2{ padding:0px 20px;}
+.right .itmbox .cbox .c_t2 .selectbox{ padding:5px; border:1px #ddd solid; background:#f5f5f5;}
+.right .itmbox .cbox .c_t2 .selectbox .select{ line-height:30px; border: medium none; border:none; width:140px; font-size:14px; color:#666; background:#f5f5f5;}
+.right .itmbox .cbox .c_t2 .btn{ margin-top:20px; cursor:pointer; display:block; height:40px; text-align:center; line-height:40px; color:#fff; font-size:14px; background:#39f;}
+.right .itmbox .cbox .c_t2 .btn:hover{ background:#2f8ae4}
+  
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{ color: #ddd;}
+
+
+
+
+
+
+
+
+

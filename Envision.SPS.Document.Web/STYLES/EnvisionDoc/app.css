@@ -1,0 +1,989 @@
+﻿@charset "utf-8";
+
+html, body, form, * {
+    font-family: "Microsoft Yahei","微软雅黑", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.ellipsis {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+*:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.icon {
+    display: block;
+    height: 16px;
+    width: 16px;
+    background: no-repeat center center;
+    cursor: pointer;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+#fullScreenModeLink .icon {
+    height: 18px;
+    width: 18px;
+}
+
+#fullScreenModeLink .fullScreen {
+    background-image: url("/_layouts/15/images/EnvisionDoc/fullScreen.png");
+}
+
+#fullScreenModeLink .exitFullScreen {
+    background-image: url("/_layouts/15/images/EnvisionDoc/exitFullScreen.png");
+}
+
+#leftSection {
+    position: absolute;
+    left: 0;
+    width: 260px;
+}
+
+#handleBarSection {
+    position: absolute;
+    width: 6px;
+    left: 270px;
+    cursor: w-resize;
+    background: #f1f1f1;
+}
+
+#rightSection {
+    position: relative;
+    right: 0;
+    width: auto;
+    margin-left: 276px;
+}
+
+#leftSection #collapsedLink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#collapsedLink .icon {
+    height: 16px;
+    width: 16px;
+    background-image: url("/_layouts/15/images/EnvisionDoc/arrowLeft.png");
+}
+
+.searchbox .autoCompleteBox {
+    float: left;
+    height: 22px;
+    overflow: hidden;
+    width: 228px;
+}
+
+.autoCompleteBox ul {
+    position: absolute;
+    z-index: 20141016;
+    background: #ffffff;
+    width: 248px;
+    margin: 23px 0 0 -1px;
+    padding: 0;
+    border: 1px solid #dddddd;
+    border-top: none;
+}
+
+    .autoCompleteBox ul li {
+        padding: 0 6px;
+        list-style: none;
+        line-height: 24px;
+        cursor: default;
+    }
+
+        .autoCompleteBox ul li:hover,
+        .autoCompleteBox ul li.selected {
+            background: #E5F2FA;
+        }
+
+.searchbox .searchLink {
+    float: left;
+    background: #2a8dd4;
+    width: 60px;
+    height: 30px;
+}
+
+.searchLink .icon {
+    margin: 7px 22px;
+    background-image: url("/_layouts/15/images/EnvisionDoc/search.png");
+}
+
+#leftSection #tree {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+}
+
+.treeBox,
+.treeBox .treeNode {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.treeNode .nodeContents {
+    display: block;
+    margin: 1px 0;
+    height: 22px;
+    padding-right: 3px;
+    line-height: 22px;
+    border: 1px solid #ffffff;
+}
+
+.nodeContents span {
+    float: left;
+    height: 22px;
+    display: block;
+}
+
+.nodeContents img {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border: none;
+    margin: 3px 0;
+}
+
+.nodeContents .icon {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border: none;
+    margin: 3px 0;
+}
+
+.collapsed > ul {
+    display: none;
+}
+
+.nodeSwitch {
+    width: 16px;
+}
+
+    .nodeSwitch .icon {
+        display: none;
+    }
+
+.collapsed > .nodeContents > .nodeSwitch > .icon {
+    background-image: url("/_layouts/15/images/EnvisionDoc/caretRight.png");
+    display: block;
+}
+
+.nodeIcon .icon {
+    background: url("/_layouts/15/images/EnvisionDoc/folder.png") 0 0;
+}
+
+.expanded > ul {
+    display: block;
+}
+
+.expanded > .nodeContents > .nodeSwitch > .icon {
+    background-image: url("/_layouts/15/images/EnvisionDoc/caretDown.png");
+    display: block;
+}
+
+.expanded > .nodeContents > .nodeIcon > .icon {
+    background-position: 16px 0;
+}
+
+.nodeContents .nodeImage,
+.nodeContents .nodeIcon {
+    margin-right: 3px;
+}
+
+.nodeContents .nodeIcon {
+    margin-right: 3px;
+}
+
+.nodeContents .nodeTitle {
+    line-height: 22px;
+    font-family: segoe ui, Microsoft YaHei;
+    font-size: 12px;
+    color: #333;
+    font-weight: 700;
+}
+
+.nodeTitle:hover {
+    color: #333;
+}
+
+.treeNode .hover, .nodeContents:hover {
+    border: 1px #b8d6fb solid;
+    background: #f2f7fd;
+}
+
+.treeBox .selected {
+    border: 1px #b8d6fb solid;
+    background: #dcebfc;
+}
+
+.treeBox ul,
+.treeBox ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#leftSection #quickNavBox {
+    float: left;
+    width: 24px;
+    margin-top: 16px;
+    margin-left: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+#quickNavBox #expandedLink,
+#quickNavBox .textLink {
+    float: left;
+    width: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 6px 0;
+}
+
+#quickNavBox #expandedLink {
+    position: static;
+    background: #efefef;
+}
+
+#expandedLink .icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    background-image: url("/_layouts/15/images/EnvisionDoc/arrowRight.png");
+}
+
+#quickNavBox .textLink {
+    display: block;
+    width: 16px;
+    padding: 6px 4px;
+    cursor: pointer;
+}
+
+.textLink:hover {
+    background: #E5F2FA;
+}
+
+#quickNavBox .selected {
+    background: #efefef;
+}
+
+.textLink span {
+    float: left;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg); /* Internet Explorer */
+    -moz-transform: rotate(-90deg); /* Firefox */
+    -webkit-transform: rotate(-90deg); /* Safari 和 Chrome */
+    -o-transform: rotate(-90deg); /* Opera */
+    font-family: segoe ui;
+}
+
+#rightSection .header {
+    background: #ffffff;
+    border-bottom:1px #eee solid;
+    padding:10px 0px 10px 10px;
+}
+
+.header .searchbox {
+    float: right;
+    width: 270px;
+}
+
+#rightSection .toolsBox {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.toolsBox .actionLink {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #666;
+    padding: 0 4px;
+}
+
+.actionLink:hover {
+    background: #d4e5f5;
+}
+
+.actionLink .icon {
+    float: left;
+    width: 20px;
+    margin: 6px 4px 0 0;
+}
+
+.dataGridBox {
+    font-family: segoe ui, Microsoft YaHei;
+    font-size: 12px;
+    color: #666;
+}
+
+    .dataGridBox tbody a {
+        font-family: segoe ui, Microsoft YaHei;
+        font-size: 12px;
+        color: #333;
+        font-weight: normal;
+    }
+
+    .dataGridBox tbody a {
+        font-family: segoe ui, Microsoft YaHei;
+        font-size: 12px;
+        color: #007acc;
+    }
+
+        .dataGridBox tbody a:hover {
+            text-decoration: underline;
+        }
+
+#rightSection #listItemsDataGrid {
+    margin-top: 45px;
+}
+
+#listItemsDataGrid .dataGridContents {
+    overflow: hidden;
+}
+
+#listItemsDataGrid .scroll .lastCell {
+    width: 64px;
+}
+
+.dataGridBox table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dataGridBox th,
+.dataGridBox td {
+    padding: 0 10px;
+    line-height: 27px;
+    text-align: left;
+}
+
+.dataGridHeader th {
+    border: 1px solid #dddddd;
+    border-left: none;
+    border-right: none;
+    font-size: 12px;
+    color: #333;
+    font-family: segoe ui, Microsoft YaHei;
+    font-weight: normal;
+}
+
+    .dataGridHeader th:hover {
+        background: #E5F2FA;
+    }
+
+.dataGridHeader .dataGridSort {
+    display: block;
+    font-size: 12px;
+    color: #333;
+    font-family: segoe ui, Microsoft YaHei;
+    font-weight: normal;
+}
+
+.dataGridSort .icon {
+    float: right;
+    width: 21px;
+    height: 27px;
+}
+
+.dataGridSort .iconSort {
+    background-image: url("/_layouts/15/images/EnvisionDoc/sort.gif");
+}
+
+.dataGridSort .iconSortAsc {
+    background-image: url("/_layouts/15/images/EnvisionDoc/asc.gif");
+}
+
+.dataGridSort .iconSortDesc {
+    background-image: url("/_layouts/15/images/EnvisionDoc/desc.gif");
+}
+
+.dataGridBody tbody tr:hover,
+.dataGridBody tbody tr.selected:hover {
+    background: #E5F2FA;
+}
+
+.dataGridBody tr.selected {
+    background: #9ccef0;
+}
+
+.dataGridBox .firstCell {
+    border-left: none;
+}
+
+.dataGridBox .lastCell {
+    border-right: none;
+}
+
+.dataGridBody .moreInfo {
+    margin: 10px 0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+    .dataGridBody .moreInfo:hover {
+        background: #efefef;
+    }
+
+.moreInfo a {
+    color: #666;
+}
+
+.contextMenuBox {
+    position: absolute;
+    z-index: 20151016;
+    background: #efefef;
+    border: 1px solid #dddddd;
+    display: none;
+}
+
+    .contextMenuBox li {
+        padding: 1px 6px;
+        margin: 2px;
+        line-height: 20px;
+        cursor: pointer;
+        font-family: segoe ui, Microsoft YaHei;
+        font-size: 12px;
+        color: #333;
+    }
+
+        .contextMenuBox li:hover {
+            padding: 0 5px;
+            background: #f1f3f6;
+            border: 1px solid #aecff7;
+        }
+
+    .contextMenuBox .contextMenuItemIcon {
+        float: left;
+        margin: -3px 6px -3px -3px;
+        height: 26px;
+        width: 20px;
+        border-right: 1px solid #dddddd;
+    }
+
+.contextMenuItemIcon i {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin: 6px 2px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.shade {
+    position: absolute;
+    _position: absolute;
+    opacity: 0.3;
+    -moz-opacity: 0.3;
+    filter: alpha(opacity=30);
+    BACKGROUND-COLOR: #999;
+}
+
+.loading {
+    position: absolute;
+    _position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("/_layouts/15/images/EnvisionDoc/loading.gif") center no-repeat;
+}
+
+.layerLoading {
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px;
+}
+
+    .layerLoading .icon {
+        float: left;
+        width: 32px;
+        height: 1px;
+        margin: 5px 5px 0 0;
+        background-image: url("/_layouts/15/images/EnvisionDoc/loading.gif");
+    }
+
+.dialog {
+    min-width: 460px;
+    display: none;
+}
+
+    .dialog table.form {
+        border: none;
+        width: 100%;
+    }
+
+table.form > thead > tr > th,
+table.form > tbody > tr > th,
+table.form > thead > tr > td,
+table.form > tbody > tr > td {
+    line-height: 27px;
+}
+
+table.form > thead > tr > th {
+    padding-bottom: 10px;
+}
+
+table.form > tbody > tr > th {
+    padding-left: 10px;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+table.form > tfoot > tr > td {
+    text-align: right;
+    padding-top: 20px;
+}
+
+.dialog input[type='text'] {
+    margin: 0;
+    padding: 0;
+    color: #7f7f7f;
+    border: 1px solid #ababab;
+}
+
+    .dialog input[type='text'].fileLeafRef {
+        width: 80%;
+    }
+
+.dialog input[type='text'], textarea, select {
+    width: 90%;
+}
+
+.dialog textarea {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    height: 80px;
+    color: #7f7f7f;
+    border: 1px solid #ababab;
+    overflow: hidden;
+}
+
+.select {
+    width: 15px;
+}
+
+    .select .icon {
+        width: 15px;
+        height: 15px;
+        background-image: url("/_layouts/15/images/EnvisionDoc/checkbox.png");
+        background-position: 0 0;
+    }
+
+    .select .checked {
+        background-position: 0 -15px;
+    }
+
+.fileIcon,
+.fileIcon img {
+    width: 16px;
+}
+
+    .fileIcon img {
+        float: left;
+        z-index: 2014;
+        height: 16px;
+    }
+
+.contentType {
+    width: 120px;
+}
+
+.user {
+    width: 80px;
+}
+
+.date {
+    width: 120px;
+}
+
+#frmUploadFiles {
+    width: 100%;
+    height: 336px;
+}
+
+#uploadFilesDialog {
+    min-width: 800px;
+}
+
+.uploader .dataGridBox {
+    background: #fafafa;
+    overflow: hidden;
+}
+
+.uploader .dataGridContents {
+    height: 260px;
+}
+
+#uploadFilesDataGrid .scroll .lastCell {
+    width: 74px;
+}
+
+.uploader .dataGridBox input[type='text'] {
+    width: 100%;
+}
+
+.uploaderTools {
+    margin-top: 10px;
+}
+
+    .uploaderTools #filePicker {
+        float: left;
+    }
+
+    .uploaderTools > .webuploader-pick {
+        margin-left: 10px;
+    }
+
+#filePicker {
+    height: 48px;
+}
+
+.fileName {
+    width: 140px;
+}
+
+.uploader .dataGridBox .fileName .ellipsis {
+    float: left;
+    width: 140px;
+    height: 27px;
+}
+
+.uploader .dataGridBox .fileName input[type='text'] {
+    width: 80px;
+}
+
+.fileSize {
+    width: 80px;
+}
+
+.fileTitle {
+    width: 140px;
+}
+
+#listItemsDataGrid .fileTitle {
+    height: 27px;
+    width: 100%;
+}
+
+.uploaderStatus {
+    width: 100px;
+}
+
+#filesDialog {
+    width: 880px;
+    height: 330px;
+    background: #ffffff;
+}
+
+    #filesDialog .dataGridContents {
+        height: 264px;
+        overflow: hidden;
+    }
+
+    #filesDialog .scroll .lastCell {
+        width: 64px;
+    }
+
+#fileVersionsDialog .dataGridContents {
+    height: 264px;
+    overflow: hidden;
+}
+
+#fileVersionsDialog .scroll .lastCell {
+    width: 244px;
+}
+
+.versionComment {
+    width: 260px;
+}
+
+.fileIcon img.checkOut {
+    float: left;
+    width: 9px;
+    height: 9px;
+    z-index: 2015;
+    margin: -8px 0 0 10px;
+}
+
+.toolsBox a i {
+    background-image: url(/_layouts/15/images/EnvisionDoc/icon_all.png);
+    background-repeat: no-repeat;
+}
+
+.toolsBox .download {
+    background-position: -140px center;
+}
+
+.toolsBox .upload {
+    background-position: -100px center;
+}
+
+.toolsBox .delete {
+    background-position: -160px center;
+}
+
+.newsCotents {
+    line-height: 24px;
+    height: 240px;
+    overflow: auto;
+}
+
+.hide {
+    display: none;
+}
+
+.required {
+    color: red;
+}
+
+.version {
+    width: 60px;
+}
+
+.tabs_titles {
+    height: 30px;
+    background: #eee;
+}
+
+    .tabs_titles a {
+        display: inline-block;
+        line-height: 27px;
+        padding: 0 10px;
+        color: #666666;
+    }
+
+        .tabs_titles a.current {
+            border-bottom: #007acc 3px solid;
+            color: #007acc;
+        }
+
+#fileViewDialog {
+    height: 390px;
+}
+
+    #fileViewDialog .tabs_contents, #fileFormDialog {
+        min-width: 800px;
+        height: 360px;
+        overflow: auto;
+    }
+
+.tabs_contents .tabs_content {
+    height: 360px;
+}
+
+#retrieveFileVersionLink .icon {
+    background-image: none;
+    font-size: 16px;
+}
+
+.layerMask {
+    /*top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .50;
+    filter: alpha(opacity=50);*/
+    position: absolute;
+    _position: absolute;
+    opacity: 0.3;
+    -moz-opacity: 0.3;
+    filter: alpha(opacity=30);
+    background: #999999;
+}
+
+.layerContents {
+    position: absolute;
+    display: block;
+    background: #ffffff;
+    box-shadow: gray 0 0 30px;
+}
+
+    .layerContents .layerHeader {
+        line-height: 32px;
+        background: #f3f3f3;
+        border-bottom: none;
+        cursor: move;
+    }
+
+.layerHeader .layerTitle {
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #262626;
+    font-weight: bold;
+}
+
+.layerHeader .layerClose {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.layerContents .layerBody {
+    word-break: break-all; /*支持IE，chrome，FF不支持*/
+    word-wrap: break-word; /*支持IE，chrome，FF*/
+    padding: 10px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.layerContents .layerFooter {
+    border-top: none;
+    height: 54px;
+    background: #f3f3f3;
+    clear: both;
+}
+
+.layerFooter .layerButtons {
+    margin: auto;
+    text-align: center;
+}
+
+.layerButtons .layerButton {
+    display: inline-block;
+    margin: 12px 10px;
+    padding: 5px 20px;
+    background: #00b7ee;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.layerButton:hover {
+    background: #00a2d4;
+}
+
+.layerFooter .layerResizable {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    width: 12px;
+    height: 12px;
+    cursor: se-resize;
+    background: url("/_layouts/15/images/EnvisionDoc/resizable.png") no-repeat center;
+}
+
+.layer-alert, .layer-confirm {
+    min-width: 80px;
+}
+
+#selectTree {
+    height: 283px;
+    width: 460px;
+    overflow: hidden;
+}
+
+.overwriteArea {
+    height: 36px;
+    line-height: 36px;
+    border-top: #ddd 1px solid;
+    background: #ffffff;
+}
+
+.toolsbar .icon-move,
+.toolsbar .icon-copy,
+.toolsBox .icon-move,
+.toolsBox .icon-copy {
+    background-image: none;
+    color: #666;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+#fileImage #fileWeChat {
+    width: 260px;
+    height: 260px;
+    margin: 10px auto;
+}
+
+.link {
+    color: #007acc;
+}
+
+.toolsbtn {
+    display: none;
+}
+
+.layerButtons .layerBuyButton {
+    background: #FF6100;
+}
+
+#uploadFileShade {
+    position: absolute;
+    _position: absolute;
+    top: 80px;
+    left: 10px;
+    right: 10px;
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.column {
+    width: 120px;
+}
+
+.hide {
+    display: none;
+}
+
+.required {
+    color: red;
+}
+
+.uploader table {
+    margin: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#uploadFilesDataGrid {
+    background: #fafafa;
+    border: 3px dashed #e6e6e6;
+    height: 290px;
+    overflow: auto;
+}
+
+    #uploadFilesDataGrid .scroll .lastCell {
+        width: 84px;
+    }

@@ -1,0 +1,208 @@
+/* CSS Document */
+
+.document_box {
+    background: #ffffff;
+}
+
+.leftpane_search {
+    padding: 15px 10px 10px 10px;
+    border-bottom: 1px #ddd solid;
+}
+
+.searchbox {
+    border: 1px #ddd solid;
+    overflow: hidden;
+    height: 22px;
+}
+
+    .searchbox .input {
+        float: left;
+        width: 213px;
+        border: 0;
+        color: #999;
+        font-size: 12px;
+        font-family: "微软雅黑";
+        margin-left: 5px;
+        padding: 2px 0 0 0;
+    }
+
+    .searchbox .btn {
+        float: right;
+        width: 20px;
+        height: 22px;
+        background: url(/_layouts/15/images/UDoc/icon_all.png) -80px center no-repeat;
+    }
+
+.rightpane_file {
+    padding: 0 10px 10px 10px;
+    overflow: hidden;
+}
+
+    .rightpane_file .filebox {
+        float: left;
+        line-height: 24px;
+        font-size: 12px;
+        color: #666;
+    }
+
+        .rightpane_file .filebox a {
+            color: #666;
+        }
+
+    .rightpane_file .toolsbar {
+        height: 30px;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+        .rightpane_file .toolsbar a:hover {
+            background: #d4e5f5;
+        }
+
+        .rightpane_file .toolsbar a {
+            float: left;
+            height: 30px;
+            padding: 0 5px;
+            font-size: 12px;
+            line-height: 30px;
+            color: #666;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+
+            .rightpane_file .toolsbar a i {
+                width: 20px;
+                height: 30px;
+                float: left;
+                margin-right: 6px;
+                background-repeat: no-repeat;
+            }
+
+        .rightpane_file .toolsbar .download {
+            background-image: url(/_layouts/15/images/UDoc/icon_all.png);
+            background-position: -140px center;
+        }
+
+        .rightpane_file .toolsbar .update {
+            background-image: url(/_layouts/15/images/UDoc/icon_all.png);
+            background-position: -100px center;
+        }
+
+        .rightpane_file .toolsbar .addfolder {
+            background-image: url(/_layouts/15/images/UDoc/icon_all.png);
+            background-position: -120px center;
+        }
+
+        .rightpane_file .toolsbar .delete {
+            background-image: url(/_layouts/15/images/UDoc/icon_all.png);
+            background-position: -160px center;
+        }
+
+
+
+#lookAuthorityLink {
+    position: absolute;
+    top: 8px;
+    right: 42px;
+    color: #007acc;
+}
+
+#authorityDialog {
+    height: 395px;
+}
+
+#usersDataGrid .dataGridContents {
+    height: 240px;
+}
+
+.userName {
+    width: 280px;
+}
+
+#usersDataGrid tbody a {
+    margin: 0 6px;
+}
+
+.dateTime {
+    width: 126px;
+}
+
+#usersDataGrid .scroll .lastCell {
+    width: 110px;
+}
+
+#authorityDialog .form > tbody > tr > th {
+    width: 15%;
+}
+
+#authorityDialog .form > tbody > tr > td {
+    width: 35%;
+    text-align: left;
+}
+
+.toolsBox .icon-plus-sign-alt, .toolsBox .icon-pencil {
+    font-size: 18px;
+    margin: 4px 6px 0 0;
+}
+
+    .toolsBox .icon-plus-sign-alt, .toolsBox .icon-pencil,
+    .toolsBox .icon-plus-sign-alt:hover, .toolsBox .icon-pencil:hover {
+        background: none;
+    }
+
+.toolsBox a i.addUser {
+    float: left;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url("/_layouts/15/images/UDoc/tfs-icons.png");
+    background-repeat: no-repeat;
+    background-position: -5456px -10px;
+}
+#logDataGrid {
+    margin-top: 10px;
+}
+#logDataGrid .dataGridContents {
+    height: 260px;
+}
+#logDataGrid .path {
+    width: 160px;
+}
+#logDataGrid .name {
+    width: 120px;
+}
+#logDataGrid .version {
+    width: 54px;
+}
+#logDataGrid .user {
+    width: 240px;
+}
+#logDataGrid .date {
+    width: 120px;
+}
+#logDataGrid .type {
+    width: 80px;
+}
+#documentLibraryLogDialog #txtStartDate,#documentLibraryLogDialog #txtEndDate {
+    width: 157px;
+    margin: 0 3px 0 0;
+}
+#documentLibraryLogDialog #txtEndDate {
+    margin-left: 3px;
+}
+#documentLibraryLogDialog input[type='button'] {
+    background: #00b7ee;
+    color: #ffffff;
+    border: none;
+    padding: 0;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+}
+#documentLibraryLogDialog input[type='button']:hover {
+    background: #00a2d4;
+}
+#logDataGrid .scroll .lastCell {
+    width: 144px;
+}

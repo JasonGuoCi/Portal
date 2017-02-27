@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
+<html id="HTML1" xmlns="http://www.w3.org/1999/xhtml" dir="<%$Resources:wss,multipages_direction_dir_value%>"
+runat="server">
+<head id="HEAD1" runat="server">
+    <meta name="GENERATOR" content="Microsoft SharePoint">
+    <meta name="progid" content="SharePoint.WebPartPage.Document">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Expires" content="0">
+    <SharePoint:RobotsMetaTag ID="Robotsmetatag1" runat="server" />
+    <title id="onetidTitle">
+        <asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server" />
+    </title>
+     <base target="_self">
+    <SharePoint:CssLink ID="Csslink1" runat="server" />
+    <SharePoint:Theme ID="Theme1" runat="server" />
+    <SharePoint:ScriptLink ID="Scriptlink1" Language="javascript" Name="core.js" runat="server"  />
+    <SharePoint:CustomJSUrl ID="Customjsurl1" runat="server" />
+    <SharePoint:SoapDiscoveryLink ID="Soapdiscoverylink1" runat="server" />
+    <asp:ContentPlaceHolder ID="PlaceHolderAdditionalPageHead" runat="server" />
+    <SharePoint:DelegateControl ID="Delegatecontrol1" runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true" />
+    <SharePoint:CssRegistration ID="CssRegistration1" Name="Themable/corev15.css" runat="server"> </SharePoint:CssRegistration>
+    <link rel="stylesheet" href="/_layouts/15/Styles/EnvisionDoc/global.css" charset="UTF-8" />
+    <link rel="stylesheet" href="/_layouts/15/Styles/EnvisionDoc/app.css" charset="UTF-8" />
+    <link rel="stylesheet" href="/_layouts/15/Styles/EnvisionDoc/document.css" charset="UTF-8" />
+    <link rel="stylesheet" href="/_layouts/15/EnvisionDoc/Plugins/FontAwesome/css/font-awesome.min.css"
+        charset="UTF-8" />
+    <link rel="stylesheet" href="/_layouts/15/EnvisionDoc/Plugins/Validform/css/style.css"
+        charset="UTF-8" />
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="/_layouts/15/EnvisionDoc/Plugins/FontAwesome/css/font-awesome-ie7.min.css" charset="UTF-8" />
+    <![endif]-->
+    <link href="/_layouts/15/EnvisionDoc/Plugins/My97DatePicker/skin/WdatePicker.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="/_layouts/15/EnvisionDoc/Scripts/jquery.min.js"  language="JavaScript" charset="UTF-8"></script>
+    <script type="text/javascript" src="/_layouts/15/EnvisionDoc/Scripts/jQuery.fn.extend.js"  language="JavaScript" charset="UTF-8"></script>
+    <style type="text/css">
+        #s4-titlerow, #sideNavBox, #fullscreenmodebox {
+            display: none !important;
+        }
+
+        #contentBox {
+            margin: 0 !important;
+        }
+
+        #s4-bodyContainer, #contentRow {
+            padding: 0 !important;
+        }
+
+        .sbar span {
+            position: absolute;
+            top: 0;
+            left: 70px;
+            right: 40px;
+            text-align: center;
+            line-height: 32px;
+            color: red;
+            display: none;
+        }
+
+            .sbar span em {
+                margin: 0 6px;
+            }
+    </style>
+  
+    <style type="text/css">
+        .ms-vh2-nofilter,.ms-vb2,body{font-family:Microsoft YaHei;}
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server" enctype="multipart/form-data">
+    <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+
+  
+</body>
+</html>

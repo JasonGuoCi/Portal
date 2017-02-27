@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42D794F7-8FF8-408F-82F0-C350D0E115E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Envision.SPS.Portal.Web</RootNamespace>
+    <AssemblyName>Envision.SPS.Portal.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\EnvisionPortal\CompanyInfo.ascx.cs">
+      <DependentUpon>CompanyInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\EnvisionPortal\CompanyInfo.ascx.designer.cs">
+      <DependentUpon>CompanyInfo.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\EnvisionPortal\TopNavigation.ascx.cs">
+      <DependentUpon>TopNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\EnvisionPortal\TopNavigation.ascx.designer.cs">
+      <DependentUpon>TopNavigation.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\EnvisionPortal\WecomeLoginName.ascx.cs">
+      <DependentUpon>WecomeLoginName.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\EnvisionPortal\WecomeLoginName.ascx.designer.cs">
+      <DependentUpon>WecomeLoginName.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\BasePage\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Handlers\AjaxHandler.ashx.cs">
+      <DependentUpon>AjaxHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Handlers\AjaxHandler.ashx.designer.cs">
+      <DependentUpon>AjaxHandler.ashx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Pages\Announcement\AnnouncementDetailed.aspx.cs">
+      <DependentUpon>AnnouncementDetailed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Pages\Announcement\AnnouncementDetailed.aspx.designer.cs">
+      <DependentUpon>AnnouncementDetailed.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Pages\DepartmentSupport\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Pages\DepartmentSupport\List.aspx.designer.cs">
+      <DependentUpon>List.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Pages\HelpDesk.aspx.cs">
+      <DependentUpon>HelpDesk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Pages\HelpDesk.aspx.designer.cs">
+      <DependentUpon>HelpDesk.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Pages\ToolKitLinks.aspx.cs">
+      <DependentUpon>ToolKitLinks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionPortal\Pages\ToolKitLinks.aspx.designer.cs">
+      <DependentUpon>ToolKitLinks.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{572ea5c2-27e2-45e1-b1b2-d7ec554ae18d}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\EnvisionPortalFeature\EnvisionPortalFeature.feature">
+      <FeatureId>{b6122b17-5ec9-4f9b-ad7e-4abcbee73adb}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{232a4f50-89d0-4535-bd5e-41d695820c8c}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\EnvisionPortal\Configs\EnvisionPortal.config" />
+    <None Include="Layouts\EnvisionPortal\Handlers\AjaxHandler.ashx" />
+    <None Include="Layouts\EnvisionPortal\Master\EnvisionPortal.master" />
+    <None Include="Layouts\EnvisionPortal\Skins\Default\img\.DS_Store" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{98a5e986-b8be-4a44-8350-c1f70fd67be9}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\MasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5dd5708b-a712-43d2-81cd-ad13b40c8ef4}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\SitePages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{26a5257d-156e-43f8-bd8d-ad5cb90e6c49}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{69d499d0-d6b5-4d04-aaff-3600503445e3}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="STYLES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{24099c8d-b554-4a23-8cfb-2a97554e654e}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\EnvisionPortal\" />
+    <Folder Include="Layouts\EnvisionPortal\Plugins\" />
+    <Folder Include="STYLES\EnvisionPortal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlTemplates\EnvisionPortal\CompanyInfo.ascx" />
+    <Content Include="ControlTemplates\EnvisionPortal\TopNavigation.ascx" />
+    <Content Include="ControlTemplates\EnvisionPortal\WecomeLoginName.ascx" />
+    <Content Include="Features\EnvisionPortalFeature\EnvisionPortalFeature.Template.xml">
+      <DependentUpon>EnvisionPortalFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\EnvisionPortal\Home.aspx" />
+    <Content Include="Layouts\EnvisionPortal\Localization\Source\Envision-zh-CN.xml" />
+    <Content Include="Layouts\EnvisionPortal\Localization\Source\Envision.xml" />
+    <Content Include="Layouts\EnvisionPortal\Master\customzie.seattle.master.txt" />
+    <Content Include="Layouts\EnvisionPortal\Master\seattle.master.txt" />
+    <Content Include="Layouts\EnvisionPortal\Pages\Announcement\AnnouncementDetailed.aspx" />
+    <Content Include="Layouts\EnvisionPortal\Pages\DepartmentSupport\List.aspx" />
+    <Content Include="Layouts\EnvisionPortal\Pages\HelpDesk.aspx" />
+    <Content Include="Layouts\EnvisionPortal\Pages\ToolKitLinks.aspx" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\EnvisionPortal.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\global.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\jquery.flexslider-min.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\jquery.flow.1.2.auto.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\jQuery.fn.extend.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\jquery.min.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\jquery.nicescroll.min.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer1\extend\layer.ext.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer1\layer.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer1\skin\default\icon-ext.png" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer1\skin\default\icon.png" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer1\skin\default\loading-0.gif" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer1\skin\default\loading-1.gif" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer1\skin\default\loading-2.gif" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer1\skin\layer.css" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer1\skin\layer.ext.css" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer\extend\layer.ext.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer\layer.js" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer\skin\default\icon-ext.png" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer\skin\default\icon.png" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer\skin\default\loading-0.gif" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer\skin\default\loading-1.gif" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer\skin\default\loading-2.gif" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer\skin\layer.css" />
+    <Content Include="Layouts\EnvisionPortal\Scripts\layer\skin\layer.ext.css" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\css\DepartGuide.css" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\css\HelpDesk.css" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\css\announcementDetailed.css" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\css\Portal.css" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\css\support.css" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\css\toolkit.css" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\01.jpg" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\bg.JPG" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\dot.gif" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\dot1.gif" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\i_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\i_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\i_4.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\i_4_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\logo.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\logo_support.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\metro_icon.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\more.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\m_bg_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\m_bg_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\m_bg_3.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\m_bg_4.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\m_bg_5.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\m_bg_6.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\m_bg_7.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\navlist_bg.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\navlist_bg1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\navlist_bg2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\pp_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\pp_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\search_btn.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\t_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\t_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\images\weather.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\01.jpg" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\bg.JPG" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\bg_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\contant_bg.gif" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\dot.gif" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\dot1.gif" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\eye.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\icon_heart_3.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\icon_heart_4.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\i_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\i_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\i_4.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\i_4_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\logo.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\logo_news.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\logo_photo.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\logo_support.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\logo_toolkit.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\metro_icon.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\more.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\m_bg_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\m_bg_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\m_bg_3.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\m_bg_4.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\m_bg_5.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\m_bg_6.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\m_bg_7.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\navlist_bg.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\navlist_bg1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\navlist_bg2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\photo_bg.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\search_btn.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\toolkit_icon.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\toolkit_icon1_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\toolkit_icon1_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\toolkit_icon2_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\toolkit_icon2_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\toolkit_icon3_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\toolkit_icon3_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\toolkit_icon4_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\toolkit_icon4_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\toolkit_icon_hover.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\t_1.gif" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\t_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\t_2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\img\weather.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Default\scripts\jquery.min.js" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Envision\CN\css\envision.css" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Envision\CN\css\envisionsp - 复制.css" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Envision\CN\css\envisionsp.css" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Envision\CN\images\navlist_bg.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\0.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\10.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\11.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\12.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\13.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\14.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\15.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\16.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\17.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\18.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\19.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\2.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\20.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\21.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\22.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\23.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\24.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\25.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\26.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\27.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\28.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\29.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\3.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\30.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\31.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\32.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\3200.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\3200_1.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\33.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\34.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\35.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\36.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\37.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\38.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\39.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\4.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\40.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\41.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\42.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\43.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\44.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\45.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\46.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\47.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\5.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\6.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\7.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\8.png" />
+    <Content Include="Layouts\EnvisionPortal\Skins\Weather\9.png" />
+    <Content Include="Modules\MasterPages\Elements.xml" />
+    <None Include="Modules\MasterPages\EnvisionPortal.master" />
+    <Content Include="Modules\SitePages\Elements.xml" />
+    <Content Include="Modules\SitePages\PortalIndex.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Envision.SPS.Utility\Envision.SPS.Utility.csproj">
+      <Project>{341b41d1-9b11-4eff-8d46-30fbaeb65aba}</Project>
+      <Name>Envision.SPS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <TokenReplacementFileExtensions>ashx</TokenReplacementFileExtensions>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

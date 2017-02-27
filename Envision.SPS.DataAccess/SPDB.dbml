@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WSS_Content" Class="SPDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.16.32.110;Initial Catalog=WSS_Content;Integrated Security=True" SettingsObjectName="Envision.SPS.DataAccess.Properties.Settings" SettingsPropertyName="WSS_ContentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AllDocs" Member="AllDocs">
+    <Type Name="AllDocs">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SiteId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DirName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LeafName" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="[Level]" Member="Level" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DeleteTransactionId" Type="System.Data.Linq.Binary" DbType="VarBinary(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="WebId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ListId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DoclibRowId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Type" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="SortBehavior" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Size" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ETagVersion" Type="System.Int32" DbType="Int" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="EffectiveVersion" Type="System.Int32" DbType="Int" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="InternalVersion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContentVersion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NextBSN" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MetadataNextBSN" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="StreamSchema" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="HasStream" Type="System.Int32" DbType="Int NOT NULL" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="BumpVersion" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="UIVersion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Dirty" Type="System.Boolean" DbType="Bit" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ListDataDirty" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DocFlags" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ThicketFlag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CharSet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProgId" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TimeCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TimeLastModified" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NextToLastTimeModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MetaInfoTimeLastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeLastWritten" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SetupPathVersion" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="SetupPath" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SetupPathUser" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CheckoutUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DraftOwnerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CheckoutDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CheckoutExpires" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VersionCreatedSinceSTCheckout" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LTCheckoutUserId" Type="System.Int32" DbType="Int" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CheckinComment" Type="System.String" DbType="NVarChar(1023)" CanBeNull="true" />
+      <Column Name="IsCheckoutToLocal" Type="System.Int32" DbType="Int NOT NULL" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="VirusVendorID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VirusStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="VirusInfo" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="VirusInfoEx" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MetaInfo" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MetaInfoSize" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MetaInfoVersion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UnVersionedMetaInfo" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UnVersionedMetaInfoSize" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UnVersionedMetaInfoVersion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WelcomePageUrl" Type="System.String" DbType="NVarChar(260)" CanBeNull="true" />
+      <Column Name="WelcomePageParameters" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsCurrentVersion" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AuditFlags" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InheritAuditFlags" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UIVersionString" Type="System.String" DbType="NVarChar(61)" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ScopeId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="BuildDependencySet" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ParentVersion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParentVersionString" Type="System.String" DbType="NVarChar(61)" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TransformerId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ParentLeafName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="CtoOffset" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Extension" Type="System.String" DbType="NVarChar(128)" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ExtensionForFile" Type="System.String" DbType="NVarChar(128)" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ItemChildCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FolderChildCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FileFormatMetaInfo" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FileFormatMetaInfoSize" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FFMConsistent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ListSchemaVersion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClientId" Type="System.Data.Linq.Binary" DbType="VarBinary(16)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

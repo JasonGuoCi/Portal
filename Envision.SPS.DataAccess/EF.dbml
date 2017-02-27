@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SPSEnvision" Class="EFDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=SPSEnvision;User ID=sa" SettingsObjectName="Envision.SPS.DataAccess.Properties.Settings" SettingsPropertyName="SPSEnvisionConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SPS_Storage" Member="SPS_Storage">
+    <Type Name="SPS_Storage">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WebName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="WebID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WebUrl" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ListName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ListID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ListUrl" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="FolderNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FileNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Storage" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Owners" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DesitionType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatorAccount" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreatorUserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ParentWebID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SPS_EventBus" Member="SPS_EventBus">
+    <Type Name="SPS_EventBus">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SiteID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WebID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ListID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ItemID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EventName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EventTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="IsEmail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FileName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FilePath" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CompletedTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SP_SPS_Storage_QueryList" Method="SP_SPS_Storage_QueryList">
+    <Parameter Name="ListName" Parameter="listName" Type="System.String" DbType="NVarChar(MAX)" />
+    <ElementType Name="SP_SPS_Storage_QueryListResult">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="WebName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="WebID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WebUrl" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ListName" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="ListID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ListUrl" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="FolderNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FileNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Storage" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Owners" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DesitionType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatorAccount" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreatorUserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ParentWebID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

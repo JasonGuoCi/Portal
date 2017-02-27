@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C5D5E58-F24D-415C-ADEA-60F8072BD1EB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Envision.SPS.Document.Web</RootNamespace>
+    <AssemblyName>Envision.SPS.Document.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+    <AssemblyDeploymentTarget>GlobalAssemblyCache</AssemblyDeploymentTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>..\RefereceLibraries\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\RefereceLibraries\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Users\administrator.SPTEST\Desktop\DLL\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefereceLibraries\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefereceLibraries\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefereceLibraries\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefereceLibraries\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\RefereceLibraries\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\EnvisionDoc\DocCurrentSiteLeftTree.ascx.cs">
+      <DependentUpon>DocCurrentSiteLeftTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\EnvisionDoc\DocCurrentSiteLeftTree.ascx.designer.cs">
+      <DependentUpon>DocCurrentSiteLeftTree.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\DocSettings.aspx.cs">
+      <DependentUpon>DocSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\DocSettings.aspx.designer.cs">
+      <DependentUpon>DocSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Handlers\AjaxHandler.ashx.cs">
+      <DependentUpon>AjaxHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Handlers\ExportLogToExcelHandler.ashx.cs">
+      <DependentUpon>ExportLogToExcelHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\DocumentManager\DocManager.aspx.cs">
+      <DependentUpon>DocManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\DocumentManager\DocManager.aspx.designer.cs">
+      <DependentUpon>DocManager.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\DocumentManager\DocRoles.aspx.cs">
+      <DependentUpon>DocRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\DocumentManager\DocRoles.aspx.designer.cs">
+      <DependentUpon>DocRoles.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\Down.aspx.cs">
+      <DependentUpon>Down.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\Down.aspx.designer.cs">
+      <DependentUpon>Down.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\DownLoadFile.aspx.cs">
+      <DependentUpon>DownLoadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\DownLoadFile.aspx.designer.cs">
+      <DependentUpon>DownLoadFile.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\ITMonitor\ITLibTypeView.aspx.cs">
+      <DependentUpon>ITLibTypeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\ITMonitor\ITLibTypeView.aspx.designer.cs">
+      <DependentUpon>ITLibTypeView.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\ITMonitor\ITSiteTypeView.aspx.cs">
+      <DependentUpon>ITSiteTypeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\ITMonitor\ITSiteTypeView.aspx.designer.cs">
+      <DependentUpon>ITSiteTypeView.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\OtherManager\GroupsMaintenance.aspx.cs">
+      <DependentUpon>GroupsMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\OtherManager\GroupsMaintenance.aspx.designer.cs">
+      <DependentUpon>GroupsMaintenance.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\OtherManager\GroupsSearch.aspx.cs">
+      <DependentUpon>GroupsSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\OtherManager\GroupsSearch.aspx.designer.cs">
+      <DependentUpon>GroupsSearch.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\OtherManager\GroupsSetting.aspx.cs">
+      <DependentUpon>GroupsSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\OtherManager\GroupsSetting.aspx.designer.cs">
+      <DependentUpon>GroupsSetting.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\Reports\AuditReport.aspx.cs">
+      <DependentUpon>AuditReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\Reports\AuditReport.aspx.designer.cs">
+      <DependentUpon>AuditReport.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\Reports\DocumentLibraryMonitoringReport.aspx.cs">
+      <DependentUpon>DocumentLibraryMonitoringReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\Reports\DocumentLibraryMonitoringReport.aspx.designer.cs">
+      <DependentUpon>DocumentLibraryMonitoringReport.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\Reports\PermissionsReport.aspx.cs">
+      <DependentUpon>PermissionsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\Reports\PermissionsReport.aspx.designer.cs">
+      <DependentUpon>PermissionsReport.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\Reports\PermissionsReportLoading.aspx.cs">
+      <DependentUpon>PermissionsReportLoading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\Reports\PermissionsReportLoading.aspx.designer.cs">
+      <DependentUpon>PermissionsReportLoading.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\SiteManager\DocumentPropterySetting.aspx.cs">
+      <DependentUpon>DocumentPropterySetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\SiteManager\DocumentPropterySetting.aspx.designer.cs">
+      <DependentUpon>DocumentPropterySetting.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\SiteManager\ThemesSetting.aspx.cs">
+      <DependentUpon>ThemesSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\EnvisionDoc\Pages\SiteManager\ThemesSetting.aspx.designer.cs">
+      <DependentUpon>ThemesSetting.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ITSettings.aspx.cs">
+      <DependentUpon>ITSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\ITSettings.aspx.designer.cs">
+      <DependentUpon>ITSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7ea0b65e-8e98-49ae-9b26-5f8dbafc92da}</SharePointProjectItemId>
+    </None>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{161a692a-856a-4ef0-8ced-f48d757ca308}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\EnvisionDocumentFeature\EnvisionDocumentFeature.feature">
+      <FeatureId>{2809148f-2829-41a2-808e-8763f10722a2}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{23f19422-4d61-444f-a606-f146cc755acb}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\EnvisionDoc\Configs\Settings.config" />
+    <None Include="Layouts\EnvisionDoc\Configs\SiteConfig.config" />
+    <None Include="Layouts\EnvisionDoc\Handlers\AjaxHandler.ashx" />
+    <None Include="Layouts\EnvisionDoc\Handlers\ExportLogToExcelHandler.ashx" />
+    <None Include="Layouts\EnvisionDoc\Master\EnvisionSeattle.master" />
+    <None Include="Layouts\EnvisionDoc\Master\Document.master" />
+    <None Include="Layouts\EnvisionDoc\Plugins\chosen\bower.json" />
+    <None Include="Layouts\EnvisionDoc\Plugins\FontAwesome\font\fontawesome-webfont.eot" />
+    <None Include="Layouts\EnvisionDoc\Plugins\FontAwesome\font\fontawesome-webfont.ttf" />
+    <None Include="Layouts\EnvisionDoc\Plugins\FontAwesome\font\fontawesome-webfont.woff" />
+    <None Include="Layouts\EnvisionDoc\Plugins\FontAwesome\font\FontAwesome.otf" />
+    <None Include="Layouts\EnvisionDoc\Scripts\zTree\css\awesomeStyle\awesome.less" />
+    <None Include="Layouts\EnvisionDoc\Scripts\zTree\css\awesomeStyle\fa.less" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\AuditLog.xls" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\AuditReport.xls" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\AuditReport.xlsx" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\DocumentLibraryMonitoringReport.xls" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\DocumentLibraryMonitoringReport.xlsx" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\Files\LibraryPermissionsReport.xls" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\IT_MonitoringReport.xls" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\IT_MonitoringReport.xlsx" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\IT_StorageReport.xls" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\LibraryPermissionsReport.xls" />
+    <None Include="Layouts\EnvisionDoc\TemplateFiles\LibraryPermissionsReport.xlsx" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d929e3a9-ffb6-4c3d-9752-eec89834615b}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{ebf8a98a-8be7-4a04-9cc0-3ff1f7d2d324}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SiteSettings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b3fa6ba7-4dc5-4f99-a494-3a84077ac1b9}</SharePointProjectItemId>
+    </None>
+    <None Include="STYLES\EnvisionDoc\bootstrap.css.map" />
+    <None Include="STYLES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{22ea5edd-6c61-44cb-b27c-1ad4b62a2bf5}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lists\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContentPages\Elements.xml" />
+    <None Include="ContentPages\EnvsionDocDefault.master" />
+    <Content Include="ControlTemplates\EnvisionDoc\DocCurrentSiteLeftTree.ascx" />
+    <Content Include="Features\EnvisionDocumentFeature\EnvisionDocumentFeature.Template.xml">
+      <DependentUpon>EnvisionDocumentFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\EnvisionDoc\document.png" />
+    <Content Include="Images\EnvisionDoc\Themes\Theme_01.png" />
+    <Content Include="Images\EnvisionDoc\Themes\Theme_02.png" />
+    <Content Include="Images\EnvisionDoc\Themes\Theme_03.png" />
+    <Content Include="Images\EnvisionDoc\Site.png" />
+    <Content Include="Layouts\DocSettings.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Master\Envsion.master.txt" />
+    <Content Include="Layouts\EnvisionDoc\Pages\DocumentManager\DocManager.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\DocumentManager\DocRoles.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\Down.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\DownLoadFile.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\ITMonitor\ITLibTypeView.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\ITMonitor\ITSiteTypeView.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\OtherManager\GroupsMaintenance.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\OtherManager\GroupsSearch.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\OtherManager\GroupsSetting.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\Reports\AuditReport.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\Reports\DocumentLibraryMonitoringReport.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\Reports\PermissionsReport.aspx" />
+    <Content Include="Images\EnvisionDoc\001.gif" />
+    <Content Include="Images\EnvisionDoc\01.jpg" />
+    <Content Include="Images\EnvisionDoc\02.jpg" />
+    <Content Include="Images\EnvisionDoc\5-121204194113-50.gif" />
+    <Content Include="Images\EnvisionDoc\8.png" />
+    <Content Include="Images\EnvisionDoc\AppIcon.png" />
+    <Content Include="Images\EnvisionDoc\arrowLeft.png" />
+    <Content Include="Images\EnvisionDoc\arrowRight.png" />
+    <Content Include="Images\EnvisionDoc\asc.gif" />
+    <Content Include="Images\EnvisionDoc\bg_main.gif" />
+    <Content Include="Images\EnvisionDoc\caretDown.png" />
+    <Content Include="Images\EnvisionDoc\caretRight.png" />
+    <Content Include="Images\EnvisionDoc\checkbox.png" />
+    <Content Include="Images\EnvisionDoc\c_1.png" />
+    <Content Include="Images\EnvisionDoc\c_2.png" />
+    <Content Include="Images\EnvisionDoc\dd.gif" />
+    <Content Include="Images\EnvisionDoc\desc.gif" />
+    <Content Include="Images\EnvisionDoc\dot.gif" />
+    <Content Include="Images\EnvisionDoc\exitFullScreen.png" />
+    <Content Include="Images\EnvisionDoc\folder-opened.png" />
+    <Content Include="Images\EnvisionDoc\folder.png" />
+    <Content Include="Images\EnvisionDoc\fullScreen.png" />
+    <Content Include="Images\EnvisionDoc\icgen.gif" />
+    <Content Include="Images\EnvisionDoc\icon_all.png" />
+    <Content Include="Images\EnvisionDoc\icon_exl.jpg" />
+    <Content Include="Images\EnvisionDoc\icon_ppt.jpg" />
+    <Content Include="Images\EnvisionDoc\icon_word.jpg" />
+    <Content Include="Images\EnvisionDoc\i_3.gif" />
+    <Content Include="Images\EnvisionDoc\library.png" />
+    <Content Include="Images\EnvisionDoc\loading.gif" />
+    <Content Include="Images\EnvisionDoc\logo.png" />
+    <Content Include="Images\EnvisionDoc\mail_1.png" />
+    <Content Include="Images\EnvisionDoc\mail_2.png" />
+    <Content Include="Images\EnvisionDoc\menu_icon.png" />
+    <Content Include="Images\EnvisionDoc\menu_mask.png" />
+    <Content Include="Images\EnvisionDoc\metroui_1.png" />
+    <Content Include="Images\EnvisionDoc\metroui_2.png" />
+    <Content Include="Images\EnvisionDoc\metroui_3.png" />
+    <Content Include="Images\EnvisionDoc\metroui_4.png" />
+    <Content Include="Images\EnvisionDoc\metroui_5.png" />
+    <Content Include="Images\EnvisionDoc\metroui_6.png" />
+    <Content Include="Images\EnvisionDoc\metroui_7.png" />
+    <Content Include="Images\EnvisionDoc\more.png" />
+    <Content Include="Images\EnvisionDoc\myimg.gif" />
+    <Content Include="Images\EnvisionDoc\new.png" />
+    <Content Include="Images\EnvisionDoc\resizable.png" />
+    <Content Include="Images\EnvisionDoc\search.png" />
+    <Content Include="Images\EnvisionDoc\sort.gif" />
+    <Content Include="Images\EnvisionDoc\spcommon.png" />
+    <Content Include="Layouts\EnvisionDoc\Configs\SiteMenus.xml" />
+    <Content Include="Layouts\EnvisionDoc\Pages\Reports\PermissionsReportLoading.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\SiteManager\css\index.css" />
+    <Content Include="Layouts\EnvisionDoc\Pages\SiteManager\DocumentPropterySetting.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Pages\SiteManager\ThemesSetting.aspx" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\chosen\chosen-sprite.png" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\chosen\chosen.css" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\chosen\chosen.jquery.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\chosen\docsupport\chosen.png" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\chosen\docsupport\event.simulate.js" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\chosen\docsupport\oss-credit.png" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\chosen\docsupport\prism.css" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\chosen\docsupport\prism.js" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\chosen\docsupport\style.css" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\FontAwesome\css\font-awesome-ie7.min.css" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\FontAwesome\css\font-awesome.min.css" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\FontAwesome\font\fontawesome-webfont.svg" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\calendar.js" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\lang\en.js" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\skin\WdatePicker.min.css" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\My97DatePicker\WdatePicker.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\Validform\css\style.css" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\Validform\images\error.png" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\Validform\images\right.png" />
+    <Content Include="Layouts\EnvisionDoc\Plugins\Validform\js\Validform_v5.3.2_min.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\DirectAccessEcbMenu.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\docLeftMenuDrag.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\jquery.nicescroll.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\json2.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer1\extend\layer.ext.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer1\layer.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer1\skin\default\icon-ext.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer1\skin\default\icon.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer1\skin\default\loading-0.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer1\skin\default\loading-1.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer1\skin\default\loading-2.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer1\skin\layer.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer1\skin\layer.ext.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer\extend\layer.ext.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer\layer.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer\skin\default\icon-ext.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer\skin\default\icon.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer\skin\default\loading-0.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer\skin\default\loading-1.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer\skin\default\loading-2.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer\skin\layer.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layer\skin\layer.ext.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\layoutsDrag.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\document.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\global.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\highcharts.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\jQuery.fn.extend.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\jquery.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\jquery.qrcode.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\calendar.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\config.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\lang\en.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\WdatePicker.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\Tree.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\Validform_v5.3.2_min.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\awesomeStyle\awesome.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\awesomeStyle\img\loading.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\demo.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\metroStyle\img\line_conn.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\metroStyle\img\loading.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\metroStyle\img\metro.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\metroStyle\img\metro.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\metroStyle\metroStyle.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\diy\2.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\diy\3.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\diy\4.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\diy\5.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\diy\6.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\diy\7.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\diy\8.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\diy\9.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\line_conn.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\loading.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\css\zTreeStyle\zTreeStyle.css" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery-1.4.4.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery.ztree.all.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery.ztree.all.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery.ztree.core.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery.ztree.core.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery.ztree.excheck.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery.ztree.excheck.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery.ztree.exedit.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery.ztree.exedit.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery.ztree.exhide.js" />
+    <Content Include="Layouts\EnvisionDoc\Scripts\zTree\js\jquery.ztree.exhide.min.js" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\css\accordion.css" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\css\custome.css" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\css\indexframe.css" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\css\index.css" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\css\pagination.css" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\01.jpg" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\active.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\close.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\c_1.gif" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\c_2.gif" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\c_3.gif" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\folder-c.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\folder-o.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\i2.gif" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\i3.gif" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\i4.gif" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\i5.gif" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\i6.gif" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\icons.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\i_1.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\i_2.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\i_3.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\line_1.gif" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\loading.gif" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\logo.jpg" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\search_btn.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\skin_icons.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\user.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\images\valid_icons.png" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\scripts\encisiondoc.js" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\scripts\jquery.fn.extend.js" />
+    <Content Include="Layouts\EnvisionDoc\Skins\Default\scripts\jquery.min.js" />
+    <Content Include="Layouts\ITSettings.aspx" />
+    <Content Include="SiteSettings\Elements.xml" />
+    <Content Include="STYLES\EnvisionDoc\app.css" />
+    <Content Include="STYLES\EnvisionDoc\bootstrap.min.css" />
+    <Content Include="STYLES\EnvisionDoc\demo.css" />
+    <Content Include="STYLES\EnvisionDoc\document.css" />
+    <Content Include="STYLES\EnvisionDoc\global.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Envision.SPS.API\Envision.SPS.API.csproj">
+      <Project>{5acd4a6b-3373-40c7-b36b-be7a80c728b8}</Project>
+      <Name>Envision.SPS.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Envision.SPS.DataAccess\Envision.SPS.DataAccess.csproj">
+      <Project>{da5d5c31-b454-4683-a0e3-b91b04cef01a}</Project>
+      <Name>Envision.SPS.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Envision.SPS.Utility\Envision.SPS.Utility.csproj">
+      <Project>{341b41d1-9b11-4eff-8d46-30fbaeb65aba}</Project>
+      <Name>Envision.SPS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <TokenReplacementFileExtensions>ashx</TokenReplacementFileExtensions>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

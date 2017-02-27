@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{341B41D1-9B11-4EFF-8D46-30FBAEB65ABA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Envision.SPS.Utility</RootNamespace>
+    <AssemblyName>Envision.SPS.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\RefereceLibraries\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\ListItemType.cs" />
+    <Compile Include="Enums\LogGroup.cs" />
+    <Compile Include="Enums\LogType.cs" />
+    <Compile Include="Enums\MethodName.cs" />
+    <Compile Include="Enums\PortalMethodName.cs" />
+    <Compile Include="Enums\ResponseStatus.cs" />
+    <Compile Include="Exceptions\IBException.cs" />
+    <Compile Include="Exceptions\IBInitializationException.cs" />
+    <Compile Include="Exceptions\OptionException.cs" />
+    <Compile Include="Extensions\BaseTypeExtension.cs" />
+    <Compile Include="Extensions\Collections\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\EnumExtension.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Handlers\EnvisionBaseLanguage.cs" />
+    <Compile Include="Handlers\EnvisionPortalConfig.cs" />
+    <Compile Include="Handlers\LeftNavHandler.cs" />
+    <Compile Include="Handlers\ListHandler.cs" />
+    <Compile Include="Handlers\ListItemHandler.cs" />
+    <Compile Include="Handlers\PortalBase.cs" />
+    <Compile Include="Handlers\PortalHandler.cs" />
+    <Compile Include="Handlers\WebHandler.cs" />
+    <Compile Include="IO\Extensions\StreamExtensions.cs" />
+    <Compile Include="Localization\Dictionaries\ILocalizationDictionary.cs" />
+    <Compile Include="Localization\Dictionaries\LocalizationDictionary.cs" />
+    <Compile Include="Localization\Dictionaries\Xml\LocalizationDictionaryProviderBase.cs" />
+    <Compile Include="Localization\Dictionaries\ILocalizationDictionaryProvider.cs" />
+    <Compile Include="Localization\Dictionaries\Xml\XmlLocalizationDictionary.cs" />
+    <Compile Include="Localization\Language.cs" />
+    <Compile Include="Localization\LocalizedString.cs" />
+    <Compile Include="Localization\XmlEmbeddedFileLocalizationDictionaryProvider.cs" />
+    <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\DocTemplate.cs" />
+    <Compile Include="Models\DocumentLibraryAttr.cs" />
+    <Compile Include="Models\EnvisionPortalConfig.cs" />
+    <Compile Include="Models\EnvisionSiteConfig.cs" />
+    <Compile Include="Models\SPPermissionsModel.cs" />
+    <Compile Include="Models\LeftMenus.cs" />
+    <Compile Include="Models\ListTemplateCatalog.cs" />
+    <Compile Include="Models\SPGroupModel.cs" />
+    <Compile Include="Models\SPDocLibraryProperties.cs" />
+    <Compile Include="Models\SPGroups.cs" />
+    <Compile Include="Models\TopMenuItem.cs" />
+    <Compile Include="Utilities\PinYinConverter.cs" />
+    <Compile Include="Weather\Weather.cs" />
+    <Compile Include="Weather\WeatherModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\BaseWebPart.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilities\CacheHelper.cs" />
+    <Compile Include="Utilities\ConfigManager.cs" />
+    <Compile Include="Utilities\DesEncrypt.cs" />
+    <Compile Include="Utilities\IBKeys.cs" />
+    <Compile Include="Utilities\IBRequest.cs" />
+    <Compile Include="Utilities\IBUtils.cs" />
+    <Compile Include="Utilities\LibPermissionsExport.cs" />
+    <Compile Include="Utilities\SerializationHelper.cs" />
+    <Compile Include="Utilities\SharePointUtil.cs" />
+    <Compile Include="Utilities\SPBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilities\SPListHelper.cs" />
+    <Compile Include="Utilities\SPListItemHelper.cs" />
+    <Compile Include="Utilities\SPServiceUtil.cs" />
+    <Compile Include="Utilities\Util.cs" />
+    <Compile Include="Utilities\XMLHelper.cs" />
+    <Compile Include="Xml\Extensions\XmlNodeExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Envision.SPS.DataAccess\Envision.SPS.DataAccess.csproj">
+      <Project>{da5d5c31-b454-4683-a0e3-b91b04cef01a}</Project>
+      <Name>Envision.SPS.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

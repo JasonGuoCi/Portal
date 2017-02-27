@@ -1,0 +1,122 @@
+/* CSS Document */
+
+div,ul,li,h1,h2,h3,h4,p,span,input,dl,dt,dd,table,form{ margin:0; padding:0; list-style:none; font-size:14px; font-family:"Microsoft Yahei","微软雅黑", Arial, Helvetica, sans-serif;}
+
+a:link,a:visited,a:hover,a:active{text-decoration:none;}
+
+.clear{ clear:both; margin:0; padding:0; list-style:none; height:0px; line-height:0px;}
+
+body{ margin:0 auto; background:#fff}
+
+.contant{ margin:0 auto; overflow:hidden}
+
+.contatn_right .listtitle{ height:40px; font-size:18px; color:#fff;  background:#00a2e4; padding-left:10px; line-height:40px;}
+.contatn_right .newslistbox{ padding:10px 0px;}
+
+.contatn_right .newslistbox .newslist li{ padding:30px 0px; overflow:hidden; border-bottom:1px #ddd solid; cursor:pointer; -webkit-transition-property: padding; -webkit-transition-duration: 0.5s; -moz-transition-property: padding; -moz-transition-duration: 0.5s; -o-transition-property: padding; -o-transition-duration: 0.5s;}
+.contatn_right .newslistbox .newslist li p{ float:left; width:90px; height:90px; background:#ddd; -webkit-transition-property: height; -webkit-transition-duration: 0.5s; -moz-transition-property: height; -moz-transition-duration: 0.5s; -o-transition-property: height; -o-transition-duration: 0.5s;}
+.contatn_right .newslistbox .newslist li p span{ float:left; width:50px; line-height:90px; color:#333; font-size:36px; text-align:center; -webkit-transition-property: margin-top; -webkit-transition-duration: 0.5s; -moz-transition-property: margin-top; -moz-transition-duration: 0.5s; -o-transition-property: margin-top; -o-transition-duration: 0.5s;}
+.contatn_right .newslistbox .newslist li p em{ font-style:normal; float:left; padding-left:4px; width:35px; color:#999; font-size:12px; line-height:16px; margin-top:32px; -webkit-transition-property: margin-top; -webkit-transition-duration: 0.5s; -moz-transition-property: margin-top; -moz-transition-duration: 0.5s; -o-transition-property: margin-top; -o-transition-duration: 0.5s;}
+.contatn_right .newslistbox .newslist li a{ height:90px; float:left; width:790px; padding:0px 20px; line-height:18px; color:#666; font-size:14px; -webkit-transition-property: padding, background; -webkit-transition-duration: 0.5s; -moz-transition-property: padding, background; -moz-transition-duration: 0.5s; -o-transition-property: padding, background; -o-transition-duration: 0.5s;}
+.contatn_right .newslistbox .newslist li a span{ line-height:34px; font-size:18px; color:#06c; display:block}
+.contatn_right .newslistbox .newslist li:hover{ padding:0px;}
+.contatn_right .newslistbox .newslist li:hover p{ height:150px}
+.contatn_right .newslistbox .newslist li:hover p span{ margin-top:30px;}
+.contatn_right .newslistbox .newslist li:hover p em{ margin-top:62px;}
+.contatn_right .newslistbox .newslist li:hover a{ background:#eee; padding:30px 20px;}
+
+
+
+.contatn_right .pagelist{ font-size:12px; padding:10px 0px; text-align:right; }
+.contatn_right .pagelist table td{ height:20px; width:20px; padding:0px 5px; font-family:segoe ui; text-align:center}
+.contatn_right .pagelist table td a{ color:#666; display:block; height:20px; width:20px; text-align:center;}
+.contatn_right .pagelist table td a:hover{ background:#ddd;}
+.contatn_right .pagelist table td .hover{ color:#09F; font-weight:bold}
+.contatn_right .listsearch{ height:28px; padding:7px 0px 7px 0px;}
+.contatn_right .listsearch li{ height:28px;}
+.contatn_right .listsearch li span{ float:left; line-height:28px; font-size:12px; color:#333; width:40px;}
+.contatn_right .listsearch li .input{ float:left; height:26px; border:1px #ddd solid; padding:0px 2px; line-height:26px; width:250px; margin-right:20px; color:#666; font-family:"微软雅黑"}
+.contatn_right .listsearch li .btn{ float:left; width:78px; height:26px; color:#fff; line-height:26px; font-size:12px; text-align:center; background:#669fd6; border:1px #5685b1 solid}
+.contatn_right .listsearch li .btn:hover{ background:#39f; border:1px #09f solid}
+.contatn_right .listsearch li .select{ float:left; width:120px; padding-right:10px;}
+.contatn_right .listsearch li .select dd{ width:118px;}
+.contatn_right .searchlistbox{ width:100%; font-size:12px; margin-bottom:20px; margin-top:17px}
+.contatn_right .searchlistbox .type{ background:#e0f0ff; color:#333;}
+.contatn_right .searchlistbox td{ padding-left:10px; height:30px; color:#666}
+.contatn_right .searchlistbox .t1{ width:70px;}
+.contatn_right .searchlistbox .t2{ width:120px;}
+.contatn_right .searchlistbox td a{ color:#666}
+.contatn_right .searchlistbox td a:hover{ text-decoration:underline;}
+.contatn_right .searchlistbox td span{ color:#999;}
+
+.select{ height:28px; position:relative; cursor:pointer}
+.select dt{ height:26px; line-height:26px; border:1px #ddd solid; background:#fff url(../img/t_2.gif) right center no-repeat; font-size:12px; padding-left:4px; color:#666}
+.select dd{ position:absolute; background:#fff; left:0px; top:27px; border:1px #ddd solid; border-bottom:0px; display:none; z-index:98}
+.select:hover dd{ display:block;}
+.select dd a{ display:block; height:27px; line-height:27px; border-bottom:1px #ddd solid; padding-left:4px; color:#666; font-size:12px;}
+.select dd a:hover{ background:#eee}
+
+.textpage_contant{ padding-bottom:40px;}
+.file_patch{ border-bottom:1px #ddd solid;}
+.file_patch p{ width:1200px; margin:0 auto; height:30px; line-height:30px; font-family:"宋体"; padding-top:10px; font-size:12px; color:#999;}
+.file_patch a{ font-size:12px; color:#999;}
+.textpage_title{ padding:40px 0px}
+.textpage_title h1{ color:#000; font-size:30px; line-height:36px; text-align:center; font-weight:normal; text-align:center; font-weight:normal}
+.textpage_title div{ text-align:center; width:300px; margin:0 auto; padding-top:10px; font-size:14px; color:#999; line-height:30px; overflow:hidden}
+.textpage_title div span{ line-height:30px;}
+.textpage_title div p{ float:right; padding:0px 0px 0px 25px; background:url(../img/eye.png) left center no-repeat;}
+.textpage_text{ padding:0px 20px 20px 20px; font-size:18px; line-height:30px; color:#444;}
+.textpage_attachment{ padding:0px 20px 20px 20px;}
+.textpage_attachment table{ width:100%; border-top:1px #ddd dashed}
+.textpage_attachment table td{ vertical-align:top; line-height:34px; font-size:14px; color:#666;}
+.textpage_attachment table td div{ padding:5px 0px 5px 14px; background:url(../img/dot.gif) left center no-repeat}
+.textpage_attachment table td div a{ line-height:24px; color:#06c; font-size:14px;}
+.textpage_attachment table td div a:hover{ text-decoration:underline}
+.textpage_attachment .type{color:#000; font-size:20px; height:48px; line-height:48px;}
+.textpage_infotable{ padding:0px 40px;}
+.textpage_infotable table{ width:100%;}
+.textpage_infotable table td{ vertical-align:top; line-height:24px; font-size:14px; color:#666;}
+.textpage_infotable .type{ width:100px; color:#000;}
+.textpage_btnarea{ padding-top:40px; text-align:center; border-top:1px #ddd solid; margin-top:20px}
+.textpage_btnarea .btn{ margin:0 auto; width:110px; height:30px; font-size:14px; color:#333; background:#ccc; border:1px #999 solid; cursor:pointer}
+.textpage_btnarea .btn:hover{ background:#bbb; border:1px #999 solid;}
+
+
+.publishpage .line{ height:28px;}
+.publishpage .textarea_line{ overflow:hidden;}
+.publishpage li{ padding:6px 20px;}
+.publishpage li .type_1{ float:left; width:80px; height:28px; line-height:28px; color:#333; font-size:14px;}
+.publishpage li .input_1{ border:1px #ddd solid; padding:0px 2px; height:26px; line-height:26px; font-size:14px; color:#666; float:left; width:630px;}
+.publishpage li .select{ float:left; width:200px;}
+.publishpage li .select dd{ width:198px;}
+.publishpage li .type_2{ font-size:14px; line-height:28px; float:left; color:#333; height:28px; width:50px; font-weight:normal; padding-left:40px;}
+.publishpage li .clander{ border:1px #ddd solid; padding:0px 2px; height:26px; background:url(../img/i_3.gif) right center no-repeat; line-height:26px; font-size:14px; color:#666; float:left; width:194px;}
+.publishpage li b{ float:left; padding:9px 10px 7px 0px; width:12px; height:12px;}
+.publishpage li .checkbox{ height:12px; width:12px;}
+.publishpage li h1{ font-weight:normal; font-size:14px; color:#666; line-height:28px; height:28px; float:left; padding-right:10px;}
+.publishpage li .input_2{ border:1px #ddd solid; padding:0px 2px; height:26px; line-height:26px; font-size:14px; color:#666; float:left; width:480px; margin-right:10px;}
+.publishpage li .btn{ float:left; width:80px; height:28px; background:#669fd6; color:#fff; border:1px #5687b0 solid; font-size:14px; cursor:pointer;}
+.publishpage li .btn:hover{ background:#39f; border:1px #09f solid;}
+.publishpage li .textarea{ border:1px #ddd solid; padding:0px 2px; line-height:24px; font-size:14px; color:#666; float:left; width:630px;}
+.publishpage_attachment{ padding:30px 20px;}
+.publishpage_attachment dt{ height:28px;}
+.publishpage_attachment dt span{ float:left; height:28px; line-height:28px; color:#333; font-size:14px; width:80px;}
+.publishpage_attachment dt .btn{ float:left; width:80px; height:28px; background:#669fd6; color:#fff; border:1px #5687b0 solid; font-size:14px; cursor:pointer;}
+.publishpage_attachment dt .btn:hover{ background:#39f; border:1px #09f solid;}
+.publishpage_attachment dd{ padding:10px 0px 10px 80px;}
+.publishpage_attachment dd div{ padding:5px 0px 5px 14px; background:url(../img/dot.gif) left center no-repeat}
+.publishpage_attachment dd div a{ line-height:24px; color:#666; font-size:14px;}
+.publishpage_btnarea li{ border-top:1px #ddd solid; padding-top:35px; padding-bottom:15px; padding-left:86px;}
+.publishpage_btnarea li .btn{ width:90px; height:30px; background:#669fd6; color:#fff; border:1px #5687b0 solid; font-size:14px; cursor:pointer; margin:0px 15px;}
+.publishpage_btnarea li .btn:hover{ background:#39f; border:1px #09f solid;}
+
+
+
+
+.list_line{ background-color:#f5f5f5;}
+
+
+
+
+.clear{ clear:both;}
+

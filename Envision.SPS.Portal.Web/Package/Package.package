@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="69d499d0-d6b5-4d04-aaff-3600503445e3" solutionId="69d499d0-d6b5-4d04-aaff-3600503445e3" resetWebServer="false" sharePointProductVersion="15.0" name="Envision.SPS.Portal.Web" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="Envision.SPS.Utility.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Envision.SPS.Utility\Envision.SPS.Utility.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="b6122b17-5ec9-4f9b-ad7e-4abcbee73adb" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="98a5e986-b8be-4a44-8350-c1f70fd67be9" />
+    <projectItemReference itemId="232a4f50-89d0-4535-bd5e-41d695820c8c" />
+    <projectItemReference itemId="24099c8d-b554-4a23-8cfb-2a97554e654e" />
+    <projectItemReference itemId="572ea5c2-27e2-45e1-b1b2-d7ec554ae18d" />
+  </projectItems>
+</package>

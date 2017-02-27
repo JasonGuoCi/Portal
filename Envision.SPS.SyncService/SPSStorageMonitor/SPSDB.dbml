@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SPSEnvision" Class="SPSDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.16.32.110;Initial Catalog=SPSEnvision;Integrated Security=True" SettingsObjectName="SPSStorageMonitor.Properties.Settings" SettingsPropertyName="SPSEnvisionConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SPS_Storage" Member="SPS_Storage">
+    <Type Name="SPS_Storage">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WebName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="WebID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WebUrl" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ListName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ListID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ListUrl" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="FolderNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FileNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Storage" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Owners" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DesitionType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatorAccount" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreatorUserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ParentWebID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

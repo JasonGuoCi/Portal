@@ -1,0 +1,121 @@
+﻿/* CSS Document */
+
+div,ul,li,h1,h2,h3,h4,p,span,input,dl,dt,dd,table,form{ margin:0; padding:0; list-style:none; font-size:13px; font-family:"Segoe UI","Microsoft Yahei","微软雅黑", Arial, Helvetica, sans-serif;}
+
+a:link,a:visited,a:hover,a:active{text-decoration:none;}
+
+.clear{ clear:both; margin:0; padding:0; list-style:none; height:0px; line-height:0px;}
+
+html,body{ height:100%; overflow:hidden}
+body{ margin:0 auto;}
+
+.bg_part{ position:absolute; left: 0px; top:0px; width:100%; z-index:-1}
+.bg_part img{ width:100%;}
+
+.top{ margin:0 auto; min-width:1600px; height:60px; background:#3476b2 url(../images/logo.png) left center no-repeat; padding-left:200px;}
+.top .nav_box{ height:60px;}
+.top .nav_box dl{ float:left; position:relative; z-index:80;}
+.top .nav_box dl dt{ line-height:60px;}
+.top .nav_box dl dt a{ display:block; line-height:60px; color:#fff; text-align:center; color:#fff; font-size:14px; width:80px; padding:0px 10px;}
+.top .nav_box dl dt a:hover{background:url(../images/navlist_bg.png); }
+.top .nav_box dl dd{ display:none; position:absolute; top:60px; background:url(../images/navlist_bg.png);}
+.top .nav_box dl:hover dd{ display:block}
+.top .nav_box dl dd ul{ position:relative;}
+.top .nav_box dl dd ul li a:hover{ background:url(../images/navlist_bg.png)}
+.top .nav_box dl dd ul .nav_l2{ line-height:30px; text-align:left;width:180px;  }
+.top .nav_box dl dd ul .nav_l2 a{ display:block; line-height:40px; width:160px; padding:0px 10px; color:#fff; font-size:12px;}
+.top .nav_box dl dd ul .nav_l3{ display:none; position:absolute; left:180px;width:200px;  top:0px; background:url(../images/navlist_bg.png)}
+.top .nav_box dl dd ul .nav_l3 a{ text-align:left; display:block; line-height:40px; background:url(../images/navlist_bg2.png); width:200px; font-size:12px; padding:0px 10px; color:#fff;}
+.top .nav_box dl dd ul .nav_l3 a:hover{ background:url(../images/navlist_bg1.png); color:#fff}
+.top .nav_box .hover{ color:#fff;}
+.top .nav_box dl dd ul li .hover{ color:#fff}
+.top .nav_box dl dd ul:hover .nav_l3{ display:block}
+.top .nav_box dl dd ul:hover .nav_l2 a{ background:url(../images/navlist_bg2.png)}
+
+.top .search_box{ position:absolute; right:240px; top:18px; height:24px; border:0px; border-radius:20px; background:#4d88bc; padding:0px 10px;}
+.top .search_box .input{ height:24px; line-height:24px; border:0px; padding-left:20px; width:140px; background:#4d88bc; font-size:12px; color:#fff; background:url(../images/search_btn.png) left center no-repeat;}
+.top .user_box{ position:absolute; text-align:right; right:20px; top:0px; line-height:60px; height:60px; color:#fff; font-size:14px; width:180px; padding-right:60px; background:url(../images/i_2.png) right center no-repeat;}
+
+.contant{ width:890px; margin:0 auto; overflow:hidden; position:absolute; right:70px; top:50%; margin-top:-205px}
+.contant .mbox_1{ float:right; width:400px; height:470px; margin-left:10px; background:url(../images/m_bg_1.png)}
+.contant .mbox_1 dt{ height:210px; background:url(../images/01.jpg);}
+.contant .mbox_1 dd{ padding:20px; color:#fff;}
+.contant .mbox_1 dd p{ font-size:18px; line-height:30px;}
+.contant .mbox_1 dd div{ line-height:24px; font-size:12px;}
+.contant .mbox_2{ float:right; overflow:hidden; width:480px;}
+.contant .mbox_2 .metro_1{ float:left; width:150px; height:150px; margin:0px 0px 10px 10px; color:#fff; overflow:hidden}
+.contant .mbox_2 .metro_1 a{ display:block; text-align:center; color:#fff; width:150px; height:50px; background-image:url(../images/metro_icon.png); padding-top:100px; background-repeat:no-repeat}
+.contant .mbox_2 .metro_1 a span{ font-size:16px; line-height:20px;}
+
+.contant .mbox_2 .metro_2{ float:left; width:310px; height:150px; margin:0px 0px 10px 10px; color:#fff;}
+/*.contant .mbox_2 .metro_2 dl{ overflow:hidden; padding:20px 20px 0px 20px;}
+.contant .mbox_2 .metro_2 dl dt{ float:left; width:70px; height:70px; padding-top:12px;}
+.contant .mbox_2 .metro_2 dl dd{ margin-left:70px; padding-left:20px; color:#fff; font-size:12px; line-height:18px;}
+.contant .mbox_2 .metro_2 dl dd p{ font-size:26px; line-height:30px; padding-bottom:4px;}
+.contant .mbox_2 .metro_2 dl dd span{ font-size:16px; line-height:24px;}
+.contant .mbox_2 .metro_2 .ep{ height:10px; overflow:hidden; padding:12px 20px 0px 20px;}
+.contant .mbox_2 .metro_2 .ep a{ float:right; width:10px; height:10px; margin-left:10px;}
+.contant .mbox_2 .metro_2 .ep .t1{ background:url(../images/t_1.png)}
+.contant .mbox_2 .metro_2 .ep .t2{ background:url(../images/t_2.png)}*/
+
+.contant .mbox_2 .metro_3{ float:left; width:470px; height:150px; margin:0px 0px 10px 10px; color:#fff; overflow:hidden}
+.contant .mbox_2 .metro_3 p{ margin-top:20px; line-height:30px; color:#fff; height:30px; font-size:18px; overflow:hidden; padding:0px 20px;}
+.contant .mbox_2 .metro_3 p a{ float:right; width:16px; height:16px; background:url(../images/more.png) center center no-repeat; margin-top:7px;}
+.contant .mbox_2 .metro_3 ul{ padding:5px 20px;}
+.contant .mbox_2 .metro_3 ul li{ font-size:12px; line-height:24px; height:24px; overflow:hidden; padding-left:20px; background:url(../images/dot1.gif) left center no-repeat;}
+.contant .mbox_2 .metro_3 ul li a{ color:#fff;}
+.contant .mbox_2 .metro_3 ul li em{ float:right; font-style:normal}
+
+
+
+
+
+.contant .mbox_2 .metro_1 .icon_1{ background-position:0px 0px;}
+.contant .mbox_2 .metro_1 .icon_2{ background-position:0px -150px;}
+.contant .mbox_2 .metro_1 .icon_3{ background-position:-150px 0px;}
+.contant .mbox_2 .metro_1 .icon_4{ background-position:-150px -150px;}
+.metro_color_1{ background-image:url(../images/m_bg_2.png)}
+.metro_color_2{ background-image:url(../images/m_bg_3.png)}
+.metro_color_3{ background-image:url(../images/m_bg_4.png)}
+.metro_color_4{ background-image:url(../images/m_bg_5.png)}
+.metro_color_5{ background-image:url(../images/m_bg_6.png)}
+.metro_color_6{ background-image:url(../images/m_bg_7.png)}
+
+
+
+
+
+/*weather begin*/
+.weather_app{ overflow:hidden; padding:15px 20px 0px 20px; width:275px; height:130px;}
+.weather_app dl{ overflow:hidden}
+.weather_app dl dt{ float:left; width:70px; height:70px;}
+.weather_app dl dt img{ width:90px; height:90px; border:0px;}
+.weather_app dl dd{ float:left; padding-left:35px; text-align:left; color:#fff;}
+.weather_app dl dd p{ font-size:14px; line-height:22px; padding-top:15px; }
+.weather_app dl dd p em{ margin-left:10px; font-style:normal}
+.weather_app dl dd span{ display:block; line-height:22px; font-size:12px;}
+.weather_app dl dd div{ font-size:28px; line-height:30px;}
+.weather_app .pp{ text-align:right; padding-top:5px;}
+.weather_app .pp img{ margin:0px 4px; border:0px; width:10px; height:10px; cursor:pointer}
+
+
+.metro_tt_new{ background:url(../img/tt_new.gif) right top no-repeat; position:absolute; width:57px; height:57px; left:0px; top:0px;}
+.metro_tt_upgrade{ background:url(../img/tt_upgrade.gif) right top no-repeat; position:absolute; width:57px; height:57px; left:0px; top:0px;}
+
+.metro_number{ position:relative}
+.metro_number .number{ position:absolute; right:-8px; top:-8px; background:url(../img/c_bg.png) right top no-repeat; width:40px; height:40px; overflow:hidden}
+.metro_number .number span{ display:block; text-align:center; line-height:40px; color:#fff; font-size:22px; font-family:Arial; padding-top:1px;}
+
+.number_s0{ background-position:0px 0px;}
+.number_s1{ background-position:-13px 0px;}
+.number_s2{ background-position:-26px 0px;}
+.number_s3{ background-position:-39px 0px;}
+.number_s4{ background-position:-52px 0px;}
+.number_s5{ background-position:0px -18px;}
+.number_s6{ background-position:-13px -18px;}
+.number_s7{ background-position:-26px -18px;}
+.number_s8{ background-position:-39px -18px;}
+.number_s9{ background-position:-52px -18px;}
+
+/*weather end*/
+

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SPSDB">
+  <DataContextMoniker Name="/SPSDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b03eba00-88b1-459d-91db-c32a3f107dd5" absoluteBounds="0.5, 0.625, 2, 3.7548343912760416">
+      <DataClassMoniker Name="/SPSDBDataContext/SPS_Storage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3554d930-6d4e-4d22-9c93-578ca655d2c1" absoluteBounds="0.51499999999999968, 1.085, 1.9700000000000002, 3.1948343912760415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

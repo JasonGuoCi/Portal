@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EF">
+  <DataContextMoniker Name="/EFDataContext" />
+  <nestedChildShapes>
+    <classShape Id="dfecfe4c-783d-421c-84a5-012f15115729" absoluteBounds="1.125, 0.875, 2, 3.7548343912760416">
+      <DataClassMoniker Name="/EFDataContext/SPS_Storage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e768eeab-500e-43c9-8a0a-8e159c74b5f4" absoluteBounds="1.1399999999999997, 1.335, 1.9700000000000002, 3.1948343912760415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bc8623ad-8c56-4b08-81ea-cc06dd58066e" absoluteBounds="3.625, 0.875, 2, 3.7548343912760416">
+      <DataClassMoniker Name="/EFDataContext/SPS_EventBus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6a9d327-fecc-4de6-82c2-e14d03cfc39c" absoluteBounds="3.6399999999999997, 1.335, 1.9700000000000002, 3.1948343912760415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

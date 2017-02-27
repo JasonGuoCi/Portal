@@ -1,0 +1,94 @@
+/* CSS Document */
+
+div,ul,li,h1,h2,h3,h4,h5,p,span,input,dl,dt,dd,table,form{ margin:0; padding:0; list-style:none; font-family:"Microsoft Yahei","Î¢ÈíÑÅºÚ", Arial, Helvetica, sans-serif;   -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}
+a:link,a:visited,a:hover,a:active{text-decoration:none; -webkit-transition: color 0.2s linear, background-color 0.2s linear;}
+
+body{ margin:0 auto; font-size:14px; font-family:segoe ui, Microsoft YaHei;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}  
+body, html{ height:100%;}
+
+.secpage_box{background:#fff;position: relative; }
+.secpage_box .tbar{ height:30px;  background:#007acc; padding:0 0 0 10px; font-size:18px; color:#fff; line-height:30px;}
+.secpage_box .tbar .welcome{ float:right;  position:relative; }
+.secpage_box .tbar .welcome dt{ line-height:30px; font-size:12px; padding:0 5px; color:#fff; position:relative; cursor:pointer}
+.secpage_box .tbar .welcome .userinfo{ display:none; border:1px #ddd solid; border-top:0; width:250px; background:#fff; position:absolute; top:30px; left:-90px; z-index:9999;}
+.secpage_box .tbar .welcome .userinfo .mybox{ padding:15px; overflow:hidden;}
+.secpage_box .tbar .welcome .userinfo .mybox a{ font-size:12px; line-height:30px; color:#666;}
+.secpage_box .tbar .welcome .userinfo .mybox a:hover{ color:#06c}
+.secpage_box .tbar .welcome .userinfo .img{ float:left; border:0; margin:0 25px 0 10px;}
+.secpage_box .tbar .welcome .userinfo .group{ line-height:30px; padding:0 25px; color:#fff; background:#007acc; font-size:12px;}
+.secpage_box .tbar .welcome:hover .userinfo{ display:block}
+.secpage_box .tbar .welcome:hover dt{ background:#0e639c}
+.secpage_box .tbar .vertical-bar{ font-size:12px; font-family:segoe ui; float:right; color:#fff; line-height:26px; height:30px; padding:0 5px;}
+.secpage_box .tbar .toolsbtn{ float:right; height:30px; padding:0 5px 0 0;}
+.secpage_box .tbar .toolsbtn .icon{ display:inline-block; padding:5px; width:20px; height:20px;}
+.secpage_box .tbar .toolsbtn .icon:hover{ background-color:#0e639c}
+.secpage_box .tbar .toolsbtn .icon i{ display:inline-block; width:20px; height:20px; background-image:url(/_layouts/15/images/UDoc/icon_all.png); background-repeat:no-repeat}
+.secpage_box .tbar .toolsbtn .tbtn1 i{ background-position:-20px 0;}
+.secpage_box .tbar .toolsbtn .tbtn2 i{ background-position:-40px 0;}
+
+.secpage_box .sbar{ padding:0 10px; background:#eee; overflow:hidden;}
+.secpage_box .sbar .maxopen{ float:right; height:20px; width:20px; margin-top:5px; }
+.secpage_box .sbar .stitle{ line-height:27px;font-size:12px; color:#666; float:left; padding:0 2px 3px 2px; margin-right:10px;}
+.secpage_box .sbar .stitle:hover{ color:#007acc;}
+.secpage_box .sbar .hover{ border-bottom:3px #007acc solid; padding:0 2px 0 2px; color:#007acc;}
+
+.leftPane{ position:absolute;width: 270px; left:0; border-right:1px #ddd solid; border-top:1px #ddd none; background:#fff;}
+.margin_right_1{ margin-right:20px;}
+.margin_top_1{ margin-top:20px;}
+
+.menu .menu_1 i{ background-position:-80px 6px;}
+.menu .menu_2 i{ background-position:-80px -70px;}
+.menu .menu_3 i{ background-position:-80px -140px;}
+.menu .menu_4 i{ background-position:-80px -210px;}
+.menu .menu_5 i{ background-position:-80px -280px;}
+.menu .menu_6 i{ background-position:-80px -350px;}
+.menu .menu_7 i{ background-position:-80px -420px;}
+.menu .menu_8 i{ background-position:-80px -490px;}
+
+.menu .menu_1:hover i{ background-position:0 6px;}
+.menu .menu_2:hover i{ background-position:0 -70px;}
+.menu .menu_3:hover i{ background-position:0 -140px;}
+.menu .menu_4:hover i{ background-position:0 -210px;}
+.menu .menu_5:hover i{ background-position:0 -280px;}
+.menu .menu_6:hover i{ background-position:0 -350px;}
+.menu .menu_7:hover i{ background-position:0 -420px;}
+.menu .menu_8:hover i{ background-position:0 -490px;}
+
+.menu .menu_1_hover i{ background-position:0 6px;}
+.menu .menu_2_hover i{ background-position:0 -70px;}
+.menu .menu_3_hover i{ background-position:0 -140px;}
+.menu .menu_4_hover i{ background-position:0 -210px;}
+.menu .menu_5_hover i{ background-position:0 -280px;}
+.menu .menu_6_hover i{ background-position:0 -350px;}
+.menu .menu_7_hover i{ background-position:0 -420px;}
+.menu .menu_8_hover i{ background-position:0 -490px;}
+
+.menu .menu_1_hover span{ color:#fff;}
+.menu .menu_2_hover span{ color:#fff;}
+.menu .menu_3_hover span{ color:#fff;}
+.menu .menu_4_hover span{ color:#fff;}
+.menu .menu_5_hover span{ color:#fff;}
+.menu .menu_6_hover span{ color:#fff;}
+.menu .menu_7_hover span{ color:#fff;}
+.menu .menu_8_hover span{ color:#fff;}
+
+
+
+.grid_tc{ text-align:center;}
+.grid_tr{ text-align:right;}
+.g_w1{ width:30px;}
+.g_w2{ width:50px;}
+.g_w3{ width:120px;}
+.g_w4{ width:180px;}
+.g_doc{ display:inline-block; height:20px; width:12px; background:url(/_layouts/15/images/UDoc/tfs-icons.png) -946px center no-repeat;}
+
+
+
+
+
+
+
+
+
+.clear{ clear:both; height:0px; overflow:hidden; line-height:0px;}
+

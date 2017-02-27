@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LeftMenu>
+  <Menus>
+    <MenuTab name="站点设置">
+      <Tabs>
+        <Menu  name="一键换肤" url="EnvisionDoc/Pages/SiteManager/ThemesSetting.aspx"/>
+        <Menu  name="目录树设置" url="EnvisionDoc/Pages/SiteManager/DocumentPropterySetting.aspx"/>
+      </Tabs>
+    </MenuTab>
+    <MenuTab name="文档库设置">
+      <Tabs>
+        <Menu  name="文档库管理" url="EnvisionDoc/Pages/DocumentManager/DocManager.aspx"/>
+        <Menu  name="文档库权限" url="EnvisionDoc/Pages/DocumentManager/DocRoles.aspx"/>
+      </Tabs>
+    </MenuTab>
+    <MenuTab name="群组设置">
+      <Tabs>
+        <Menu  name="站点权限" url="EnvisionDoc/Pages/OtherManager/GroupsSetting.aspx"/>
+        <Menu  name="群组维护" url="EnvisionDoc/Pages/OtherManager/GroupsMaintenance.aspx"/>
+       <Menu  name="群组查询" url="EnvisionDoc/Pages/OtherManager/GroupsSearch.aspx"/>
+      </Tabs>
+    </MenuTab>
+    <MenuTab name="报表查看">
+      <Tabs>
+        <Menu  name="审计报表" url="EnvisionDoc/Pages/Reports/AuditReport.aspx"/>
+        <Menu  name="权限报表" url="EnvisionDoc/Pages/Reports/PermissionsReport.aspx"/>
+        <Menu  name="统计报表" url="EnvisionDoc/Pages/Reports/DocumentLibraryMonitoringReport.aspx"/>
+      </Tabs>
+    </MenuTab>
+  </Menus>
+</LeftMenu>

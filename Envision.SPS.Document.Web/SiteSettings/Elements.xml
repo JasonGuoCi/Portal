@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomActionGroup
+   Id="EnvsionCustomizeNav"
+   Title="远景能源专用导航"
+   Description = "远景能源专用导航"
+   Location = "Microsoft.SharePoint.SiteSettings"
+   Sequence = "1999">
+  </CustomActionGroup>
+  <CustomAction
+    Id="SiteManagerNav"
+    GroupId="EnvsionCustomizeNav"
+    Location="Microsoft.SharePoint.SiteSettings"
+    Sequence="2000"
+    Rights="ViewListItems"
+    Title="文档站点管理后台"
+    Description="文档站点管理后台">
+    <UrlAction Url="~site/_layouts/15/DocSettings.aspx"/>
+  </CustomAction>
+  <CustomAction
+    Id="ITManagerNav"
+    GroupId="EnvsionCustomizeNav"
+    Location="Microsoft.SharePoint.SiteSettings"
+    Rights="ManageWeb"
+    RequireSiteAdministrator="TRUE"
+    Sequence="2010"
+    Title="IT全局监控"
+    Description="IT全局监控">
+    <UrlAction Url="~sitecollection/_layouts/15/ITSettings.aspx"/>
+  </CustomAction>
+  <CustomAction
+    Id="SiteManagerMenuLink"
+    Location="Microsoft.SharePoint.StandardMenu"
+    GroupId="SiteActions"
+    Sequence="0"
+    Rights="ViewListItems|ViewPages"
+    Title="文档站点管理后台">
+    <UrlAction Url="~site/_layouts/15/DocSettings.aspx"/>
+  </CustomAction>
+</Elements>

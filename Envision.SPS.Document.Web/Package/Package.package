@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ebf8a98a-8be7-4a04-9cc0-3ff1f7d2d324" solutionId="ebf8a98a-8be7-4a04-9cc0-3ff1f7d2d324" resetWebServer="false" sharePointProductVersion="15.0" name="Envision.SPS.Document.Web" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="Envision.SPS.Utility.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Envision.SPS.Utility\Envision.SPS.Utility.csproj" />
+    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="WebApplication" sourcePath="..\RefereceLibraries\ICSharpCode.SharpZipLib.dll" />
+    <customAssembly location="NPOI.dll" deploymentTarget="WebApplication" sourcePath="..\RefereceLibraries\NPOI.dll" />
+    <customAssembly location="AspNetPager.dll" deploymentTarget="WebApplication" sourcePath="..\RefereceLibraries\AspNetPager.dll" />
+    <customAssembly location="Telerik.Web.UI.dll" deploymentTarget="WebApplication" sourcePath="..\RefereceLibraries\Telerik.Web.UI.dll" />
+    <projectOutputAssembly location="Envision.SPS.DataAccess.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Envision.SPS.DataAccess\Envision.SPS.DataAccess.csproj" />
+    <projectOutputAssembly location="Envision.SPS.API.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Envision.SPS.API\Envision.SPS.API.csproj" />
+    <customAssembly location="NPOI.OOXML.dll" deploymentTarget="WebApplication" sourcePath="..\RefereceLibraries\NPOI.OOXML.dll" />
+    <customAssembly location="NPOI.OpenXml4Net.dll" deploymentTarget="WebApplication" sourcePath="..\RefereceLibraries\NPOI.OpenXml4Net.dll" />
+    <customAssembly location="NPOI.OpenXmlFormats.dll" deploymentTarget="WebApplication" sourcePath="..\RefereceLibraries\NPOI.OpenXmlFormats.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="2809148f-2829-41a2-808e-8763f10722a2" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="d929e3a9-ffb6-4c3d-9752-eec89834615b" />
+    <projectItemReference itemId="23f19422-4d61-444f-a606-f146cc755acb" />
+    <projectItemReference itemId="22ea5edd-6c61-44cb-b27c-1ad4b62a2bf5" />
+    <projectItemReference itemId="161a692a-856a-4ef0-8ced-f48d757ca308" />
+  </projectItems>
+</package>

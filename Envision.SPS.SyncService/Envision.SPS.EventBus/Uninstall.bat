@@ -1,0 +1,2 @@
+%SystemRoot%\Microsoft.NET\Framework\v4.0.30319\installutil.exe /u  C:\Envision\SPS\DocumentManagement\Source Code\Envision.SPS\Envision.SPS.SyncService\Envision.SPS.EventBus\bin\Debug\Envision.SPS.EventBus.exe  
+::pause
